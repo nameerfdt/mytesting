@@ -17,9 +17,10 @@
 
   #hero-img {
     display: block;
-    padding-left: 50%;
     margin-left: auto;
     margin-right: auto;
+    height: 200px;
+    image-rendering: auto;
   }
 
   body {
@@ -28,7 +29,8 @@
   
   h1 {
     display: flex;
-    justify-content: left;
+   text-align: center;
+    padding-top: auto;
     
   }
 
