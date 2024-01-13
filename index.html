@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tracy Freeman - WDD 230 - TESTING</title>
+    <title>Tracy Freeman - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development | Tracy Freeman | course assignment portal" />
     <meta name="author" content="Tracy Freeman" />
     <link rel="stylesheet" href="styles/base.css">
@@ -28,14 +28,14 @@
                         target="_blank">Scripture</a></li>
             </ul>
         </nav>
-        <main class="main-grid">
+        <main id="main-grid">
             <h2 class="course-title">WDD 230: Web Frontend Development</h2>
-            <hr class="solid">
-            <section id="learning-card">
+            <hr class="line-break">
+            <section class="card">
                 <h3>Learning Activities</h3>
                 <ul id="course-links">
-                    <li><a href="https://nameerfdt.github.io/wdd230/lesson01/holygrail.html"></a>01: Holy Layout</li>
-                    <li><a href="link"></a>02: </li>
+                    <li>01: <a href="lesson01/holygrail.html">Holy Layout</a> | <a href="">Codepen</a></li>
+                    <li>02:<a href="link"></a>02: </li>
                     <li><a href="link"></a>03: </li>
                     <li><a href="link"></a>04: </li>
                     <li><a href="link"></a>05:
@@ -52,7 +52,7 @@
                     </li>
                 </ul>
             </section>
-            <section id="information-card">
+            <section class="card">
                 <h3>Information</h3>
                 <div>
                     <div class="weather"></div>
@@ -61,9 +61,13 @@
             </section>
         </main>
         <footer>
-            <p>&copy;<br>Tracy Freeman<br> United States of Americia</p>
-            <p id="lastmodification"></p>
-        </footer>
+            <p>&copy; <span id="currentyear"></span> <br>Tracy Freeman<br> United States of Americia</p>
+
+            <div class="lastmodification">
+                <p>Last modification: <span id="lastmodification"></span> </p>
+            </div>
+    </div>
+    </footer>
     </div>
     <script src="scripts/getdates.js"></script>
 </body>
