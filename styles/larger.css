@@ -1,0 +1,13 @@
+@media screen and (min-width: 900px) {
+    header, footer {
+        background-color: black;
+        color: #B0B493;
+    }
+    nav {
+        background: #B0B493;
+      }
+
+      #nav-list a {
+        color: black;
+      }
+}
