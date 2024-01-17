@@ -7,7 +7,7 @@
   }
 
   header {
-    background: #D30D58;
+    background: #B0B493;
     padding: 2rem;
   }
 
@@ -45,7 +45,6 @@
   }
 
   #nav-list a {
-    /*margin-top: 20px;*/
     padding: 10px;
     text-decoration: none;
     color: white;
@@ -84,7 +83,7 @@
   }
 
   h3 {
-    background: #057DC1;
+    background: #B0B493;
   }
 
   li a {
@@ -104,7 +103,7 @@
   }
    
   footer {
-    background: #057DC1;
+    background: #B0B493;
     padding: 5px;
     text-align: center;
     grid-column: 1 / 3;
