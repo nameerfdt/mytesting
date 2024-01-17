@@ -15,4 +15,12 @@
     nav li a {
       color: black;
       }
+
+    #main-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    h2, hr.line-break {
+      grid-column: 1/3;
+    }
 }

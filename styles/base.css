@@ -6,6 +6,7 @@
   header {
     background: #B0B493;
     padding: 2rem;
+    margin: 0 auto;
   }
 
   #header-grid {
@@ -39,11 +40,13 @@
     /*display: block;*/
     background: #000000;
     text-align: center;
-    margin-top: -20px;
+    /*margin-top: -20px;*/
+    margin: 0 auto;
+    padding: 10px;
   }
 
   nav li a {
-    padding: 10px;
+    /*padding: 10px;*/
     text-decoration: none;
     color: white;
   }
@@ -51,7 +54,8 @@
   #main-grid {
     display: grid;
     grid-template-columns: auto;
-    margin-top: -20px;
+    /*margin-top: -20px;*/
+    margin: 0 auto;
   }
 
   main {
@@ -109,7 +113,7 @@
 
   /*this is @media query. Don't add anything after*/
 
-  @media screen and (max-width: 900px) {
+/*  @media screen and (max-width: 900px) {
     #header-grid, #main-grid {
       display: block;
       height: auto;
@@ -122,4 +126,4 @@
       display: block;
       font-size: 40px;
     }
-  }
+  }*/
