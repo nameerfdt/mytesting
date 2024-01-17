@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
-
-  #content {
+/*  #content {
     max-width: 1600px;
-    /*margin: 0 auto;*/
-  }
+    /*margin: 0 auto;
+  }*/
 
   header {
     background: #B0B493;
@@ -27,6 +24,7 @@
   body {
     font-family: Roboto, Arial, sans-serif;
     margin: auto;
+    max-width: 800px;
   }
   
   h1 {
@@ -38,13 +36,13 @@
   }
 
   nav {
-    display: block;
+    /*display: block;*/
     background: #000000;
     text-align: center;
     margin-top: -20px;
   }
 
-  #nav-list a {
+  nav li a {
     padding: 10px;
     text-decoration: none;
     color: white;

@@ -6,8 +6,13 @@
     nav {
         background: #B0B493;
       }
+    
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+    }
 
-      #nav-list a {
-        color: black;
+    nav li a {
+      color: black;
       }
 }
