@@ -30,9 +30,9 @@ nav {
 	padding: 3px 7px 6px;
 	background-color: #eee;
 	color: #000;
- 	position: _________;
-	________;
-	________;
+ 	position: absolute;
+	top: 5px;
+	right: 20px;
 }
 
 #menu::before {
@@ -64,6 +64,14 @@ nav {
 	background-color: #bbb;
 	color: #333;
 	font-weight: 700;
+
+}
+.menu.show::before {
+	content: "✖️";
+}
+
+.active {
+	font-weight: bold;
 }
 
 /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
