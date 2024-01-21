@@ -36,21 +36,45 @@
     font-size: 60px;
   }
 
-  nav {
-    /*display: block;*/
+  /*commented this out to do the hamburger menu
+   nav { 
     background: #000000;
     text-align: center;
-    /*margin-top: -20px;*/
     margin: 0 auto;
     padding: 10px;
-  }
+  } */
+/*added for hamburger menu*/
+#hamburgermenu {
+  display: block;
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none;
+  padding-left: 15px;
+  background-color: #daddc2;
+}
+/*added for hamburger menu*/
+#hamburgermenu::before {
+  content: "\2630"; /*the unicode symbol for hamburger menu*/
+  font-size: 24px;
+}
+/* end of add */
 
   nav li a {
-    /*padding: 10px;*/
     text-decoration: none;
     color: white;
   }
-
+/*added for hamburger menu*/
+.hamburgernav a {
+  display: block;
+  padding: 10px;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  transition: 0.5s;
+  font-size: 1.5em;
+}
+/* end of add */
   #main-grid {
     display: grid;
     grid-template-columns: auto;
@@ -110,6 +134,15 @@
     text-align: center;
     grid-column: 1 / 3;
   }
+/*added for hamburger menu*/
+.show li {
+  display: block;
+}
+
+#hamburgermenu.show:before {
+  content: "✖️";
+}
+/* end of add */
 
   /*this is @media query. Don't add anything after*/
 

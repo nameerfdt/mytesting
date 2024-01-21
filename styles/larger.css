@@ -15,7 +15,26 @@
     nav li a {
       color: black;
       }
+/* start of added items for hamburger menu */
+.hamburgernav {
+  display: flex;
+  background-color: #B0B493;
+  justify-content: space-around;
+  margin: 0 auto;
+}
 
+.hamburgernav li {
+  display: block
+}
+
+.hamburgernav a {
+  text-align: center;
+}
+
+#hamburgermenu {
+  display: none;
+}
+/* end of added items for hamburger menu */
     #main-grid {
       grid-template-columns: 1fr 1fr;
     }
