@@ -22,13 +22,12 @@
 <body>
     <header id="header-grid">
         <div id="hero-box">
-            <img id="hero-img" src="images/tracy-image.jpeg" alt="This is a photo of Tracy Freeman.">
+            <img id="hero-img" src="images/tracy-image-optimized.jpeg" alt="This is a photo of Tracy Freeman.">
         </div>
         <h1 class="title">Tracy Freeman</h1>
     </header>
-    <a id="hamburgermenu" href="#"></a> <!--Tag used for hamburger menu-->
     <nav>
-        <ul class="hamburgernav"> <!--added the class for hamburger menu-->
+        <ul>
             <li><a href="#">Home</a></li>
             <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
             <li><a href="chamber/">Chamber</a></li>
@@ -44,13 +43,16 @@
             <h3>Learning Activities</h3>
             <ul id="course-links">
                 <li>01: <a href="lesson01/holygrail.html">Holy Layout</a> | <a
-                        href="https://codepen.io/tdfreeman/details/ZEPOwZE"> JS Pen</a></li>
+                        href="https://codepen.io/tdfreeman/details/ZEPOwZE"> JS Codepen</a></li>
                 <li>02: <a href="lesson02/design.html">Design Principles</a> | <a href="lesson01/media-query.html">CSS
-                        Media Queries</a></li>
-                <li>03: <a href="link"></a></li>
-                <li>04: <a href="link"></a></li>
-                <li>05: <a href="link"></a></li>
-                <li>06: <a href="link"></a></li>
+                        Media Queries</a> | <a href="lesson02/design-principles.html">Design Principles Document</a>
+                </li>
+                <li>03: <a href="images/css-combinators.png">CSS Combinators</a> | <a
+                        href="https://codepen.io/tdfreeman/pen/vYPZXwd">Pseudo-elements Codepen</a> | <a
+                        href="https://codepen.io/tdfreeman/pen/vYPZyYj">Hamburger Codepen</a></li>
+                <li>04: <a href="#"></a></li>
+                <li>05: <a href="#"></a></li>
+                <li>06: <a href="#"></a></li>
                 <li>07: <a href="link"></a></li>
                 <li>08: <a href="link"></a></li>
                 <li>09: <a href="link"></a></li>
@@ -65,15 +67,20 @@
             </div>
         </section>
     </main>
+    <div class="googlemaps">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49843.94667390215!2d-121.18519320647056!3d38.66619881165299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ae11b89d97a7f%3A0xd44e4c2e31e1ce2a!2sFolsom%2C%20CA!5e0!3m2!1sen!2sus!4v1705956796827!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     <footer>
-        <p>&copy; <span id="currentyear"></span> <br>Tracy Freeman<br> United States of Americia</p>
+        <p>&copy; <span id="currentyear"></span> <br>Tracy Freeman<br> United States of America</p>
 
         <div class="lastmodification">
             <p>Last modification: <span id="lastmodification"></span> </p>
         </div>
     </footer>
     <script src="scripts/getdates.js"></script>
-    <script src="scripts/hamburgermenu.js"></script>
 </body>
 
 </html>

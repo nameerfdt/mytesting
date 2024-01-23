@@ -144,6 +144,9 @@
 }
 /* end of add */
 
+.hamburgernav a:active::before {
+  content: "📍";
+}
   /*this is @media query. Don't add anything after*/
 
 /*  @media screen and (max-width: 900px) {
