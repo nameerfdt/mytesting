@@ -1,0 +1,58 @@
+body {
+    max-width: 900px;
+    margin: 5px auto;
+} 
+main {
+    margin-top: 10px;
+    text-align: center;
+} 
+header { 
+    text-align: center;
+}
+h2{
+    background-color: #3d6080;
+    /* color: #F6F1D1; */
+    color: white;
+    font-family: 'Mooli', sans-serif;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+h2 {
+    padding: 0.5em;
+}
+
+h3 {
+    background-color: #F6F1D1;
+    color: #3d6080;
+    font-family: 'Mooli', sans-serif;
+    padding: 0.25em;
+    padding-left: 30px;
+}
+
+p, a, li, h3:nth-child(2) {
+    font-family: Arial, sans-serif;
+}
+
+h3:nth-child(1) {
+    font-family: 'Mooli', sans-serif;
+}
+
+.primary {
+    background-color: #3d6080;
+    color: white;
+}
+.colors {
+   margin: 20px auto;
+}
+.secondary {
+    background-color: #F6F1D1;
+}
+.accent1 {
+    background-color: black;
+    color: white;
+}
+
+.accent2 {
+    background-color: #FFFFFF;
+}
