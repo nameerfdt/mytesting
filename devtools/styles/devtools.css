@@ -28,5 +28,24 @@ ul li:nth-child(3)::before {
 }
 
 img {
-    width:100%;
+    width:95%;
+}
+
+footer {
+    background-color: #B0B493;
+    text-align: center;
+}
+
+#main-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#picture1 {
+    grid-column: 1/2;
+}
+
+#picture2 {
+    grid-column: 2/3;
+
 }
