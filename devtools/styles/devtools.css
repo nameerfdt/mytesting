@@ -1,0 +1,32 @@
+body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    color: black;
+    background-color: #B0B493;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+li:hover {
+    color: blue;
+}
+
+ul li::before {
+    content: "☑️ "
+}
+
+ul li:nth-child(3)::before {
+    content: "🌟 ";
+}
+
+img {
+    width:100%;
+}
