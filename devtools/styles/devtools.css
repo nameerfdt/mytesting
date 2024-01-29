@@ -1,11 +1,12 @@
 body {
     max-width: 900px;
     margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     color: black;
-    background-color: #B0B493;
+    background-color: #707457;
     font-size: 3em;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -14,6 +15,7 @@ header {
 
 main {
     margin: 0 10px;
+
 }
 
 ul li {
@@ -46,8 +48,9 @@ img {
 }
 
 footer {
-    background-color: #B0B493;
+    background-color: #707457;
     text-align: center;
+    padding: 3px;
 }
 
 #main-grid {
@@ -66,6 +69,14 @@ footer {
 
 code {
     background-color: lightgrey;
+}
+
+#panel {
+    font-size: 20px;
+}
+    
+li {
+    font-size: 20px;
 }
 
 @media screen and (max-width: 500px) {
