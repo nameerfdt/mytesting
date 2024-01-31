@@ -1,0 +1,18 @@
+.arm {
+    /* max-width: 300px; */
+    background-color: red;
+    color: white;
+    display: flex;
+    /* display:display; */
+    align-items: auto;
+    justify-content: center; 
+    /* text-align: center; */
+}
+
+p {
+    counter-increment: paras;
+  }
+  
+  p::before {
+   content: '🔸' counter(paras) ':';
+  }
