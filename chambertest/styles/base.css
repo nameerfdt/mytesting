@@ -1,11 +1,24 @@
 nav {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    margin: auto;
+    background-color:#3d6080;
+    display: flex;
+    flex-direction: column;
 }
 
-.ham-nav {
-    grid-column: 2/3;
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav a:hover {
+    text-decoration: underline double;
+    }
+
+.active {
+    color: hotpink;
 }
 
 #hero-box {
