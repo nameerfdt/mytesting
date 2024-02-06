@@ -1,24 +1,80 @@
-nav {
-    background-color:#3d6080;
-    display: flex;
-    flex-direction: column;
-}
-
-nav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    text-decoration: none;
-    font-size: 1em;
-}
-
-nav a:hover {
-    text-decoration: underline double;
+:root {
+    --bkg-color: #3d6080
     }
 
-.active {
-    color: hotpink;
+body {
+    margin: 0 auto;
+    background-color: var(--bkg-color);
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    padding-right: 60px;
+}
+
+.ham-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bkg-color);
+    margin: 0 auto;
+    padding: 0;
+}
+
+.ham-nav a {
+    color: white;
+    text-align: center;
+    padding: .5em;
+    text-decoration: none;
+    margin: auto;
+}
+
+a:hover {
+    background-color: #F6F1D1;
+    color:#3d6080;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#hamburgermenu {
+    position: absolute;
+    top: .1%;
+    right: 8%;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color:#F6F1D1;
+}
+
+.ham-nav a {
+    display: none;
+}
+
+#hamburgermenu::before {
+	content: "≡";
+    background-color: #3d6080;
+}
+
+.show a {
+    display: block;
+}
+
+#hamburgermenu.show::before {
+	content: "x";
+    background-color: #3d6080;
+    padding-top: .5em;
+}
+
+main h2 {
+    margin: 0;
+    text-align: center;
+    font-family: mooli;
+    background-color: var(--bkg-color);
+    color: white;
+}
+
+.logo-img {
+    padding: 20px;
 }
 
 #hero-box {
@@ -33,19 +89,22 @@ nav a:hover {
     height: 300px;
 }
 
-.title-h1 {
+button {
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 5%;
+    left: 3%;
+    background-color: #F6F1D1;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
-.title-h2 {
+h1 {
     position: absolute;
-    top: 70%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 0 auto;
+    font-size: 1.5em;
 }
 
 main {
@@ -56,14 +115,29 @@ main {
 
 #events, #weather, .chamber-member {
     border: 1px solid black;
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #F6F1D1;
 }
-
 
 footer {
     display: block;
     background-color: #3d6080;
     color: white;
     text-align: center;
+}
+
+#quicklinks p {
+    margin: 0;
+    font-weight: bold;
+}
+
+footer a {
+    color:white;
+    text-decoration: none;
+}
+
+address #quicklinks, #social {
+    padding-top: 10px;
 }
