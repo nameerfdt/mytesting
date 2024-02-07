@@ -5,44 +5,50 @@ const list = document.querySelector("#list");
 
 // Create a click event listener for the Add Chapter button using arrow function.
 button.addEventListener('click', () => {
-    const myFavchap = input.value;
-    input.value = '';
-    // In the click event function block {...}, do the following:
-    //check to make sure the input is not blank before doing the following remaining tasks in this list using an if block, otherwise provide a message or at least do nothing and return the .focus() to the input field.
-    //if input vaule is not equal to blank
-    // if (input.value != '') {
-        
+    if (input.value != '') {
+        const li = document.createElement('li');
+        const deleteButton = document.createElement('button');
+        li.textContent = input.value;
+        deleteButton.textContent = '❌';
+        li.appendChild(deleteButton);
+        deleteButton.addEventListener('click', function() {
+            ul.removeChild(li);
+            input.infocus();
+    });
+        ul.appendChild(li);
+        input.value = '';
+    }   else {
+        input.focus();
+    }
+});
+
     // } 
     // else if (input.value == '') {
     //     console.log = "Enter a book and chapter"
     // } else {
     // }
-});
 
-// create a li element
-const li = document.createElement('li');
 
-// create a delete button
-const deleteButton = document.createElement('button');
+
 
 // populate the li elements textContent or innerHTML with the input value
-li.appendChild(myFavchap);
+// li.appendChild(myFavchap);
 
 // populate the button textContent with a ❌
-button.textContent = "❌";
+// button.textContent = "❌";
 
 // append the li element with the delete button
-li.appendChild(button);
+// li.appendChild(button);
 
 // append the li element to the unordered list in your HTML
-li.appendChild(list);
+// li.appendChild(list);
 
 // add an event listener to the delete button that removes the li element when clicked
-button.addEventListener('click',() => {
-    li.removeChild(list);
+// button.addEventListener('click',() => {
+//     li.removeChild(list);
     
 // send the focus to the input element
-input.focus();
+// input.focus();
 
 // change the input value to nothing or the empty string to clen up the interface for the user
 
