@@ -1,0 +1,10 @@
+@media screen and (min-width: 1050px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    grid2{
+        grid-column: 2/3;
+    }
+}
