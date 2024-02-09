@@ -1,5 +1,5 @@
 :root {
-    --bkg-color: #3d6080
+    --bkg-color: #3d6080;
     }
 
 body {
@@ -7,24 +7,25 @@ body {
     background-color: var(--bkg-color);
 }
 
-#dark-mode {
+#darkmode {
     position: absolute;
     top: 1em;
     right: 1em;
-    font-size: 1rem;
-    cursor: pointer;
-    
+    font-size: 1.5rem;
+    cursor: pointer;   
 }
 
-.dark-mode {
+.darkmode {
     background-color: black;
     color: white;
+    border: 1px solid white;
 }
 
 .logo-img {
     width: 50px;
     height: 50px;
-    padding-right: 60px;
+    /* padding-right: 60px; */
+    padding: 20px;
 }
 
 .ham-nav {
@@ -44,15 +45,16 @@ body {
 }
 
 a:hover {
-    /* background-color: #F6F1D1; */
-    /* color:#3d6080; */
+    /* background-color: #F6F1D1;
+    color:#3d6080; */
     font-weight: bold;
     border-radius: 10px;
 }
 
 #hamburgermenu {
     position: absolute;
-    top: 1.25em;
+    /* top: 1.25em; */
+    top: 1.5em;
     right: 1em;
     font-size: 2rem;
     font-weight: 700;
@@ -76,19 +78,7 @@ a:hover {
 #hamburgermenu.show::before {
 	content: "x";
     background-color: #3d6080;
-    padding-top: .5em;
-}
-
-main h2 {
-    margin: 0;
-    text-align: center;
-    font-family: mooli;
-    /* background-color: var(--bkg-color); */
-    color: white;
-}
-
-.logo-img {
-    padding: 20px;
+    /* padding-top: .5em; */
 }
 
 #hero-box {
@@ -97,17 +87,19 @@ main h2 {
     color: white;
     font-size: 1em;
     font-family: mooli;
+    margin: 2em;
 }
 #hero-img {
     width: 100%;
-    height: 300px;
+    height: auto;
+    /* height: 300px; */
 }
 
 button {
     position: absolute;
     top: 5%;
     left: 3%;
-    background-color: #F6F1D1;
+    background-color: #edded2;
     padding: 10px 10px;
     cursor: pointer;
     border-radius: 10px;
@@ -123,29 +115,44 @@ h1 {
 
 main {
     display: block;
-    /* gap: 10px; */
     font-family: Arial, sans-serif;
-    margin: 2em;
+    margin: 25px;
 }
 
-.grid-box {
-    background-color: #F6F1D1;
-    margin: 1em;
-}
-
-#events, #weather, .chamber-member {
+section { 
+/* #events, #weather, .chamber-member { */
     border: 1px solid black;
-    /* margin: 5px; */
-    padding: 5px;
+    margin: 20px;
+    padding: 15px;
     border-radius: 10px;
-    /* background-color: #F6F1D1; */
+    background-color: #edded2;
+}
+
+h3 {
+    margin-bottom: 1px;
+}
+
+.horizontal-line {
+    border-top: 1px solid rgba(109, 107, 107, 0.51);
+    margin-top: 0;
+}
+
+main h2 {
+    margin: 0;
+    text-align: center;
+    font-family: mooli;
+    /* background-color: var(--bkg-color); */
+    color: white;
 }
 
 footer {
     display: block;
     background-color: #3d6080;
+    border: 1px solid black;
     color: white;
     text-align: center;
+    padding-top: 10px;
+    margin: 2em;
 }
 
 #quicklinks p {
