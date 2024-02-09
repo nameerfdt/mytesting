@@ -1,5 +1,5 @@
 :root {
-    --bkg-color: #3d6080;
+    --bkg-color: #3d6080
     }
 
 body {
@@ -7,25 +7,50 @@ body {
     background-color: var(--bkg-color);
 }
 
-#darkmode {
-    position: absolute;
-    top: 1em;
-    right: 1em;
-    font-size: 1.5rem;
-    cursor: pointer;   
+header {
+    display: flex;
+    justify-content: left;
+    text-align: center;
+}
+h1 {
+    color: #edded2;
+    /* justify-content: center; */
+    align-items: center;
 }
 
-.darkmode {
+.logo-img {
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+#hamburgermenu {
+    position: absolute;
+    top: 2em;
+    right: 1em;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+
+#dark-mode {
+    position: absolute;
+    top: 1.5em;
+    right: 1em;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+
+.dark-mode {
     background-color: black;
     color: white;
-    border: 1px solid white;
 }
 
 .logo-img {
     width: 50px;
     height: 50px;
-    /* padding-right: 60px; */
-    padding: 20px;
+    padding-right: 60px;
 }
 
 .ham-nav {
@@ -45,22 +70,13 @@ body {
 }
 
 a:hover {
-    /* background-color: #F6F1D1;
-    color:#3d6080; */
+    /* background-color: #F6F1D1; */
+    /* color:#3d6080; */
     font-weight: bold;
     border-radius: 10px;
 }
 
-#hamburgermenu {
-    position: absolute;
-    /* top: 1.25em; */
-    top: 1.5em;
-    right: 1em;
-    font-size: 2rem;
-    font-weight: 700;
-    text-decoration: none;
-    color: white;
-}
+
 
 .ham-nav a {
     display: none;
@@ -78,63 +94,7 @@ a:hover {
 #hamburgermenu.show::before {
 	content: "x";
     background-color: #3d6080;
-    /* padding-top: .5em; */
-}
-
-#hero-box {
-    position: relative;
-    text-align: center;
-    color: white;
-    font-size: 1em;
-    font-family: mooli;
-    margin: 2em;
-}
-#hero-img {
-    width: 100%;
-    height: auto;
-    /* height: 300px; */
-}
-
-button {
-    position: absolute;
-    top: 5%;
-    left: 3%;
-    background-color: #edded2;
-    padding: 10px 10px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-h1 {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.5em;
-}
-
-main {
-    display: block;
-    font-family: Arial, sans-serif;
-    margin: 25px;
-}
-
-section { 
-/* #events, #weather, .chamber-member { */
-    border: 1px solid black;
-    margin: 20px;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: #edded2;
-}
-
-h3 {
-    margin-bottom: 1px;
-}
-
-.horizontal-line {
-    border-top: 1px solid rgba(109, 107, 107, 0.51);
-    margin-top: 0;
+    padding-top: .5em;
 }
 
 main h2 {
@@ -145,14 +105,55 @@ main h2 {
     color: white;
 }
 
+
+
+#hero-box {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    font-family: mooli;
+}
+#hero-img {
+    width: 100%;
+    height: 300px;
+}
+
+button {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    background-color: #F6F1D1;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+main {
+    display: block;
+    /* gap: 10px; */
+    font-family: Arial, sans-serif;
+    margin: 2em;
+}
+
+.grid-box {
+    background-color: #F6F1D1;
+    margin: 1em;
+}
+
+#events, #weather, .chamber-member {
+    border: 1px solid black;
+    /* margin: 5px; */
+    padding: 5px;
+    border-radius: 10px;
+    /* background-color: #F6F1D1; */
+}
+
 footer {
     display: block;
     background-color: #3d6080;
-    border: 1px solid black;
     color: white;
     text-align: center;
-    padding-top: 10px;
-    margin: 2em;
 }
 
 #quicklinks p {
