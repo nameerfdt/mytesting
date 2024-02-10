@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prison Blues Chamber of Commerce</title>
+    <meta name="description"
+        content="This site shares information about the chamber. Find community demographics and upcoming events. Learn how to join the chamber.">
+    <meta name="author" content="Tracy Freeman">
+
+    <link rel="icon" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Prison Blues Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://nameerfdt.github.io/wdd230/chamber/images/folsom-american-river.jpeg">
+    <meta property="og:url" content="https://nameerfdt.github.io/wdd230/chamber/">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/prisonblueslogo.png" class="logo-img" alt="logo">
+        <h1>Prison Blues Chamber of Commerce</h1>
+        <div>
+            <a id="hamburgermenu" href="#"></a>
+        </div>
+        <div id="darkmode">
+            ☀️ / 😎
+        </div>
+    </header>
+
+    <nav class="ham-nav">
+        <a href="#" class="active">Home</a>
+        <a href="">Discover</a>
+        <a href="">Directory</a>
+        <a href="">Join</a>
+    </nav>
+
+    <main>
+        <div id="hero-box">
+            <img id="hero-img" src="images/folsom-american-river-small.jpg" alt="American River and Rainbow Bridge">
+            <button onclick="document.location='#'">Join Now!</button>
+        </div>
+
+
+        <section id="events">
+            <h3>Events</h3>
+            <hr class="horizontal-line">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum perferendis ipsum minus eum recusandae
+                sunt hic ab similique, fuga voluptates vel eius ea non doloremque, deserunt ipsa dolore error
+                reprehenderit.</p>
+        </section>
+
+        <section id="weather">
+            <h3>Weather</h3>
+            <hr class="horizontal-line">
+        </section>
+
+        <h2>Member Spotlight</h2>
+
+        <section id="spotlight1">
+            <h3>Member 1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum velit cumque inventore quia libero
+                sapiente! Molestiae, nesciunt. Delectus commodi esse similique debitis quam totam architecto a
+                nihil?
+                Porro, praesentium vero.</p>
+        </section>
+
+        <section id="spotlight2">
+            <h3>Member 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illum eaque, ex, accusamus
+                velit
+                magnam tenetur deleniti possimus earum minima quod voluptate at commodi. Deserunt minima earum nam
+                quis
+                natus?</p>
+        </section>
+
+        <section id="spotlight3">
+            <h3>Member 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos magni perferendis sint molestiae odio
+                quae
+                ullam quaerat omnis non mollitia, officia quis repellendus iure itaque cum similique quam eos
+                maxime!
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <address>
+            Prison Blues Chamber of Commerce<br>
+            123 Commerce St<br>
+            Prison Blues, CA 95630<br>
+            USA
+        </address>
+
+        <div id="quicklinks">
+            <p>Quick Links</p>
+            <a href="https://visitfolsom.com" target="_blank">Visit Folsom</a><br>
+            <a href="http://bighouseprisonmuseum.org" target="_blank">Folsom Prison Museum</a><br>
+            <a href="https://folsomcasharttrail.com/the-trail/blog" target="_blank">Johnny Cash Trail</a><br>
+        </div>
+
+        <div id="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+
+        <div id="copyright">
+            <p>&copy;<span id="currentyear"></span> Tracy Freeman
+        </div>
+        <div id="project">
+            <p>Project for WDD 230</p>
+        </div>
+        <div id="lastmod">
+            <p>Last modification: <span id="lastmodification"></span></p>
+        </div>
+        <!-- <div class="lastmodification">
+            <p>Last modification: <span id="lastmodification"></span> </p>
+        </div> -->
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkmode.js"></script>
+
+</body>
+
+</html>
