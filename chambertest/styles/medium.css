@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 820px) {
     /* main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -13,5 +13,11 @@
         font-size: 2em;
     }
 
+    .logo-img {
+        width: 60px;
+        height: auto;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
     }
     
