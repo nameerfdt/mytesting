@@ -88,7 +88,7 @@ a:hover {
     padding-top: .5em;
 }
 
-#hero-box {
+.hero-box {
     position: relative;
     text-align: center;
     color: white;
@@ -98,9 +98,14 @@ a:hover {
     margin-top: 2em;
     margin-bottom: 1em;
 }
-#hero-img {
+/* #hero-img {
     width: 100%;
     height: 300px;
+} */
+
+.hero-box img {
+    width: 100%;
+    height: auto;
 }
 
 button {
