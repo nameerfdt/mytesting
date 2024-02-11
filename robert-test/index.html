@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winston Salem, NC Chamber of Commerce</title>
+    <meta name="description" content="Winston Salem, NC Chamber of Commerce, Robert Whisenhunt, chamber of commerce">
+    <meta name="author" content="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@300&family=Roboto+Slab:wght@300&family=Vollkorn&display=swap"
+        rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Winston Salem, NC Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.worldatlas.com/upload/64/10/03/shutterstock-1427463413.jpg">
+    <meta property="og:url" content="https://whisenhunt-robert.github.io/wdd230/chamber/index.html">
+</head>
+
+<body>
+    <div id="mode">
+        🌑
+    </div>
+    <header>
+        <div class="header-left">
+            <img src="images/winston-salem-logo.png" alt="Winston Salem Logo">
+            <h1>Winston Salem<br>Chamber of Commerce</h1>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="header-right">
+            <!-- Hamburger Button -->
+            <button id="menu"></button>
+            <nav class="navigation">
+                <a href="" class="active">Home</a>
+                <a href="">Discover</a>
+                <a href="">Directory</a>
+                <a href="">Join</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <img src="images/winston-salem.png" alt="Hero Image">
+        <button onclick="document.location='#'">Join the Chamber</button>
+        <section class="events">
+            <!--Current event(s) section-->
+            <h2>Events Section</h2>
+        </section>
+        <section class="weather">
+            <!--Weather card section-->
+            <h2>Weather Section</h2>
+        </section>
+        <section id="spotlight1">
+            <!--Spotlights section-->
+            <h2>Spotlights Section</h2>
+        </section>
+        <section id="spotlight2">
+            <!--Spotlights section-->
+            <h2>Spotlights Section</h2>
+        </section>
+        <section id="spotlight3">
+            <!--Spotlights section-->
+            <h2>Spotlights Section</h2>
+        </section>
+        <!-- </div> -->
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <!--City Address & Phone Number.-->
+            <p>101 North Main Street<br>
+                Winston-Salem, NC 27101<br>
+                336-727-8000</p>
+        </div>
+        <div class="footer-right">
+            <!--Social Media icons/links will go here.-->
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;<span id="currentYear"></span> Winston Salem Chamber<br>Robert Whisenhunt<br>WDD 230 Project
+            </p>
+            <div class="lastMod">
+                <p>Last modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkmode.js"></script>
+</body>
+
+</html>

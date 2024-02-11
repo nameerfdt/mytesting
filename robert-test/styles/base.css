@@ -1,0 +1,134 @@
+body {
+    margin: 0 auto;
+    /* max-width: 80%; */
+}
+ 
+header,
+nav,
+main,
+footer {
+    font-family: 'Roboto Slab', 'Vollkorn', 'Pathway Extreme', sans-serif;
+}
+ 
+header,
+footer {
+    background-color: #3f2894;
+    text-align: center;
+    color: #fffafa;
+    border: 2px solid #000000;
+}
+ 
+header {
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+ 
+.header-left {
+    display: flex;
+}
+ 
+header img {
+    max-width: 150px;
+    max-height: 150px;
+    margin: auto;
+    background-color: snow;
+    /* display: block; */
+    border: 2px solid black;
+}
+ 
+.vertical-line {
+    width: 2px;
+    height: 50px;
+    background-color: #000;
+    margin: 0 20px;
+}
+ 
+.active::before {
+    content: "👉";
+}
+ 
+nav a {
+    text-decoration: none;
+    color: snow;
+    padding: 5px;
+}
+ 
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+ 
+#menu::before {
+    content: "☰";
+}
+ 
+#menu.open::before {
+    content: "✖️";
+}
+ 
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: snow;
+}
+ 
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+ 
+.navigation a:hover {
+    background-color: snow;
+    color: black;
+    font-weight: 700;
+}
+ 
+.open a {
+    display: block;
+}
+ 
+/* #main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+} */
+ 
+main {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5px;
+    width: 90%;
+    font-weight: bold;
+}
+ 
+main img {
+    height: 70px;
+    margin: auto;
+    background-color: snow;
+    display: block;
+    /* border: 2px solid black; */
+}
+ 
+button {
+    position: absolute;
+ 
+}
+ 
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+}

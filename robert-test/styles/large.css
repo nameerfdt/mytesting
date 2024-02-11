@@ -1,0 +1,47 @@
+@media screen and (min-width:700px) {
+    nav {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-evenly;
+    }
+ 
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+ 
+
+  main img {
+        grid-column: 1/4;
+        height: 300px;
+        margin: auto;
+        background-color: snow;
+        /* display: block; */
+        /* border: 2px solid black; */
+    }
+ 
+    .events {
+        grid-column: 1/3;
+    }
+ 
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+ 
+    .navigation {
+        flex-direction: row;
+    }
+ 
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+ 
+
+ 
+    .stuff {
+        margin: 1rem auto;
+    }
+}
