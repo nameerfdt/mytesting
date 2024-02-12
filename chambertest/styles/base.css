@@ -12,7 +12,7 @@ header {
     justify-content: space-between;
     align-items: center;
     /* height: 90px; */
-    margin: 1em;
+    margin: 1em 1em 0 1em;
 }
 
 h1 {
@@ -95,7 +95,7 @@ a:hover {
     font-size: 1em;
     font-family: mooli;
     /* padding-bottom: 1em; */
-    margin-top: 2em;
+    /* margin-top: 2em; */
     margin-bottom: 1em;
 }
 /* #hero-img {
