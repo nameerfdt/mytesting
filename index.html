@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tracy Freeman - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development | Tracy Freeman | course assignment portal">
+    <meta name="author" content="Tracy Freeman">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Tracy Freeman - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://nameerfdt.github.io/wdd230/images/folsom-american-river.jpeg">
+    <meta property="og:url" content="https://nameerfdt.github.io/wdd230">
+</head>
+
+<body>
+    <header id="header-grid">
+        <picture class="profile">
+            <source media="(max-width: 400px)" srcset="images/myprofile-150x186.webp">
+            <img src="images/myprofile-220x271.webp" alt="This is a photo of Tracy Freeman." width="220" height="271">
+        </picture>
+        <h1 class="title">Tracy Freeman</h1>
+    </header>
+
+    <!--added for hamburgermenu-->
+    <a id="hamburgermenu" href="#"></a>
+    <nav>
+        <!--added class to ul for hamburgermenu-->
+        <ul class="hamburgernav">
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/10?lang=eng&id=p3-p5#p3"
+                    target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <picture>
+            <source media="(max-width: 400px)" srcset="images/sacramento-temple-mobile.webp">
+            <img src="images/sacramento-temple-large.webp" alt="Description" width="900" height="563">
+        </picture>
+        <div class="hero-label">
+            <p>Sacramento, CA Temple</p>
+        </div>
+
+        <main id="main-grid">
+            <h2 class="course-title">WDD 230: Web Frontend Development</h2>
+            <hr class="line-break">
+            <section class="card">
+                <h3>Learning Activities</h3>
+                <ul id="course-links">
+                    <li>01: <a href="lesson01/holygrail.html">Holy Layout</a> | <a
+                            href="https://codepen.io/tdfreeman/details/ZEPOwZE"> JS Codepen</a></li>
+                    <li>02: <a href="lesson02/design.html">Design Principles</a> | <a
+                            href="lesson01/media-query.html">CSS
+                            Media Queries</a> | <a href="lesson02/design-principles.html">Design Principles Document</a>
+                    </li>
+                    <li>03: <a href="images/css-combinators.png">CSS Combinators</a> | <a
+                            href="https://codepen.io/tdfreeman/pen/vYPZXwd">Pseudo-elements Codepen</a> | <a
+                            href="https://codepen.io/tdfreeman/pen/vYPZyYj">Hamburger Codepen</a></li>
+                    <li>04: <a href="#"></a></li>
+                    <li>05: <a href="#"></a></li>
+                    <li>06: <a href="#"></a></li>
+                    <li>07: <a href="link"></a></li>
+                    <li>08: <a href="link"></a></li>
+                    <li>09: <a href="link"></a></li>
+                    <li>10: <a href="link"></a></li>
+                </ul>
+            </section>
+            <section class="card">
+                <h3>Information</h3>
+                <div>
+                    <div class="weather"></div>
+                    <div class="number-of-visits"></div>
+                </div>
+            </section>
+        </main>
+        <div class="googlemaps">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49843.94667390215!2d-121.18519320647056!3d38.66619881165299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ae11b89d97a7f%3A0xd44e4c2e31e1ce2a!2sFolsom%2C%20CA!5e0!3m2!1sen!2sus!4v1705956796827!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> <br>Tracy Freeman<br> United States of America</p>
+
+            <div class="lastmodification">
+                <p>Last modification: <span id="lastmodification"></span> </p>
+            </div>
+        </footer>
+        <script src="scripts/getdates.js"></script>
+        <!--added for hamburgermenu-->
+        <script src="scripts/hamburgermenu.js"></script>
+</body>
+
+</html>

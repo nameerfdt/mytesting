@@ -1,6 +1,6 @@
 // Get the initial temperature and wind speed values from the HTML
-const initialTemperature = parseInt(document.getElementById("temperature").textContent.split(":")[1].trim());
-const initialWindSpeed = parseInt(document.getElementById("windspeed").textContent.split(":")[1].trim());
+const initialTemperature = parseInt(document.getElementById("temperature"));
+const initialWindSpeed = parseInt(document.getElementById("windspeed"));
 
 
 function calculateWindChill(Ta, v) {

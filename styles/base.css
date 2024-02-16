@@ -1,4 +1,10 @@
-  header {
+body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: auto;
+  max-width: 800px;
+}
+
+header {
     background: #B0B493;
     padding: 2rem;
     margin: 0 auto;
@@ -10,17 +16,41 @@
     align-items: center;
   }
 
+  .profile img {
+    width: 100%;
+    height: auto;
+  }
+
+.hero {
+  position: relative;
+  margin: 0 auto;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  }
+  
+.hero-label {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  background:radial-gradient(#fff, #90b5dd4d
+  );
+  border: 1px solid black;
+}
+
+.hero-label p {
+  font-size: 1em;
+  padding: 5px;
+  margin: 0;
+} */
+
   #hero-img {
     display: block;
     margin-left: auto;
     height: 200px;
     image-rendering: auto;
-  }
-
-  body {
-    font-family: Roboto, Arial, sans-serif;
-    margin: auto;
-    max-width: 800px;
   }
   
   h1 {
@@ -31,13 +61,6 @@
     font-size: 60px;
   }
 
-  /*commented this out to do the hamburger menu
-   nav { 
-    background: #000000;
-    text-align: center;
-    margin: 0 auto;
-    padding: 10px;
-  } */
 /*added for hamburger menu*/
 #hamburgermenu {
   display: block;
@@ -45,6 +68,7 @@
   font-weight: 700;
   text-decoration: none;
   padding-left: 15px;
+  padding-bottom: 10px;
   background-color: #daddc2;
   color: black;
 }
@@ -76,8 +100,7 @@ nav li a {
 /* end of add */
   #main-grid {
     display: grid;
-    grid-template-columns: auto;
-    /*margin-top: -20px;*/
+    grid-template-columns: auto; 
     margin: 0 auto;
   }
 
@@ -91,6 +114,7 @@ nav li a {
     margin: 0;
     padding: 15px;
   }
+
   h2 {
     margin-bottom: 0;
   }
