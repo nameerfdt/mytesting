@@ -89,8 +89,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1.5em;
-        align-items: center;
-        margin: auto;
+        /* align-items: center; */
+        margin: 0 auto;
         font-size: 1em;
     }
     
@@ -98,11 +98,11 @@
         display: block;
         margin: auto;
     }
-    #discover-grid div p {
+    /* #discover-grid div p {
         color: white;
         text-align: center;
         padding-left: 20px;
         padding-right: 20px;
-    }
+    } */
     
     }

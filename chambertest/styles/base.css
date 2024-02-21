@@ -204,9 +204,15 @@ address #quicklinks {
     width: 100%;
     height: auto;
 }
-/* #discover-grid {
-    display: block;
-} */
+
+#discover-images {
+    margin: 20px;
+    color: white;
+}
+
+#discover-images img {
+    border-radius: 10px;
+}
 
 #demographics {
     text-align: center;
