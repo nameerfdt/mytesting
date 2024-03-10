@@ -18,7 +18,7 @@ async function getLinks() {
 // calls the getAssignLinks functions
     getLinks();
 
-const activities = document.getElementById("activities")
+const activities = document.getElementById("course-links")
 
 // create displayLinks() function and name the functions single parameter weeks. remember from the json data that you wrote and tested that the data is in an array of objects representing weeks of the term, 
 const displayLinks = ((weeks) => {
@@ -28,26 +28,30 @@ const displayLinks = ((weeks) => {
         // create a section element with a variable named card
         const card = document.createElement('section');
         // create a he element for the week header
-        // const h4 = document.createElement('h4');
+        const h4 = document.createElement('h4');
         // // create a text element with the h4 variable name of h4 and get the week number from JSON lesson key 
-        // h4.textContent = `${week.lesson}: `;
-        // // append h4 to the card (section element)
-        // card.appendChild(h4);
+        h4.textContent = `${week.lesson}: `;
+        // append h4 to the card (section element)
+        card.appendChild(h4);
+    activities.appendChild(card);
+        // const url = document.createElement('p');
+        // url.textContent = `${week.url}`;
+        //     card.appendChild(url);
 
 // EVERYTHING ABOVE WORKS
 
-        links.forEach((link) => {
+        // links.forEach((link) => {
         // create unordered list
-            const links = document.createElement('a');
-            const ul = document.createElement('ul');
-            // create list of weekly assignments
-            const li = document.createElement('li');
-            // create the anchor tag for each url
-            a.setAttribute("href", url);
-            links.textContent = `${link.title}`;
-            card.appendChild(li)
+            // const links = document.createElement('a');
+            // // const ul = document.createElement('ul');
+            // // create list of weekly assignments
+            // // const url = document.createElement('li');
+            // // create the anchor tag for each url
+            // a.setAttribute("href", url) + `${week.title}`;
+            // // links.textContent = `${week.title}`;
+            // card.appendChild(a)
             
-        })
+})
 
         // url.textContent = `${week.url}`;
         
@@ -70,6 +74,6 @@ const displayLinks = ((weeks) => {
             // card.appendChild(lesson);
             // card.appendChild(link);
 
-        activities.appendChild(card);
+        // activities.appendChild(card);
     });
-})
+// });
