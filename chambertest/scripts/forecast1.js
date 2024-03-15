@@ -5,21 +5,21 @@
 // const day1 = document.querySelector('#futureDay1')
 // const day1icon= document.querySelector('futureDay1icon');
 
-async function apiFetch(){
-    try{
-        const response = await fetch(forecastURL);
-        if (response.ok) {
-            const data = await response.json();
-            //console.log(data);
-            displayResults(data);
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error);
-    } 
-}
-apiFetch();
+// async function apiFetch(){
+//     try{
+//         const response = await fetch(forecastURL);
+//         if (response.ok) {
+//             const data = await response.json();
+//             //console.log(data);
+//             displayResults(data);
+//         } else {
+//             throw Error(await response.text());
+//         }
+//     } catch (error) {
+//         console.log(error);
+//     } 
+// }
+// apiFetch();
 
 // const future = document.getElementById(`futureforecast`);
 
@@ -49,25 +49,25 @@ apiFetch();
 // }
 
 
-function displayResults(forecast) {
-    const future = document.getElementById('futureforecast');
+// function displayResults(forecast) {
+//     const future = document.getElementById('futureforecast');
 
-    let dayIndex = 1;
-    for (let i = 6; i < forecast.list.length; i += 8) {
-        const day = forecast.list[i];
+//     let dayIndex = 1;
+//     for (let i = 6; i < forecast.list.length; i += 8) {
+//         const day = forecast.list[i];
         
-        const card = document.createElement('section');
-        const temp = document.createElement('p');
-        temp.textContent = `Day ${dayIndex}: ${day.main.temp.toFixed(0)} °F`; // Display temperature for the day
+//         const card = document.createElement('section');
+//         const temp = document.createElement('p');
+//         temp.textContent = `Day ${dayIndex}: ${day.main.temp.toFixed(0)} °F`; // Display temperature for the day
 
-        const desc = document.createElement('p');
-        desc.textContent = `Description: ${day.weather[0].description}`; // Display weather description
-        card.appendChild(desc);
+//         const desc = document.createElement('p');
+//         desc.textContent = `Description: ${day.weather[0].description}`; // Display weather description
+//         card.appendChild(desc);
 
-        const icon = document.createElement('img');
-        icon.src = `https://openweathermap.org/img/wn/${day.weather[0].icon}.png`;
-        icon.alt = day.weather[0].description;
-        icon.classList.add('weather-icon'); // Add a class for styling
+//         const icon = document.createElement('img');
+//         icon.src = `https://openweathermap.org/img/wn/${day.weather[0].icon}.png`;
+//         icon.alt = day.weather[0].description;
+//         icon.classList.add('weather-icon'); // Add a class for styling
 
         // tempDesc.textContent = `Day ${dayIndex}: ${day.main.temp.toFixed(0)} °F, ${day.weather[0].description}`;
         
@@ -83,12 +83,12 @@ function displayResults(forecast) {
         // dayIndex++;
 
 
-        card.appendChild(temp) ;
-        future.appendChild(card);
+//         card.appendChild(temp) ;
+//         future.appendChild(card);
 
-        dayIndex++;
-    }
-}
+//         dayIndex++;
+//     }
+// }
 
 // function displayResults(data){
 //     const card = document.createElement('section');
@@ -131,11 +131,10 @@ function displayResults(forecast) {
 
 // 
 
-const apikey = c5c228cf26f7fad6c4c81bd04c1890f7;
+// const apikey = 'c5c228cf26f7fad6c4c81bd04c1890f7';
 
-const apiKey = 'YOUR_API_KEY';
-const currentWeatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=38.68&lon=-121.15&units=imperial&appid=${apiKey}`;
-const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=38.68&lon=-121.15&cnt=32&units=imperial&appid=${apiKey}`;
+const currentWeatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=38.68&lon=-121.15&units=imperial&appid=c5c228cf26f7fad6c4c81bd04c1890f7`;
+const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=38.68&lon=-121.15&cnt=32&units=imperial&appid=c5c228cf26f7fad6c4c81bd04c1890f7`;
 
 async function apiFetch() {
     try {
@@ -156,6 +155,7 @@ async function apiFetch() {
         console.log(error);
     }
 }
+apiFetch()
 
 function displayCurrentTemperature(data) {
     const currentTemp = document.getElementById('current-temperature');
@@ -182,11 +182,12 @@ function displayForecast(forecast) {
         icon.src = `https://openweathermap.org/img/wn/${day.weather[0].icon}.png`;
         icon.alt = day.weather[0].description;
         icon.classList.add('weather-icon'); // Add a class for styling
-}        card.appendChild(temp) ;
-future.appendChild(card);
 
-dayIndex++;
+        card.appendChild(temp);
+        card.appendChild(icon)
+        future.appendChild(card);
+
+    dayIndex++;
+}
 }
 
-
-apiFetch();
