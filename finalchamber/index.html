@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prison Blues Chamber of Commerce</title>
+    <meta name="description"
+        content="This site shares information about the chamber. Find community demographics and upcoming events. Learn how to join the chamber.">
+    <meta name="author" content="Tracy Freeman">
+
+    <link rel="icon" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Prison Blues Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://nameerfdt.github.io/wdd230/chamber/images/folsom-american-river.jpeg">
+    <meta property="og:url" content="https://nameerfdt.github.io/wdd230/chamber/">
+</head>
+
+<body>
+
+    <header>
+        <div id="darkmodeBtn">
+            ☀️ / 😎
+        </div>
+
+        <a id="hamburgermenu" href="#"></a>
+        <nav class="ham-nav">
+            <img class="logo-img" src="images/prisonblueslogo.copy.webp" alt="prison blues chamber logo" width="125"
+                height="125">
+            <a href="." class="active">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
+    <div id="banner">
+        <p>ATTENTION! All visitors and users are welcome to attend the Chamber of Commerce's meet and greet event on
+            Wednesday at 7:00 p.m. <span id="closeBanner">❌</span></p>
+    </div>
+    <div id="hero-box">
+        <picture>
+            <source media="(max-width: 500px)" srcset="images/folsom-american-river1000-500.webp">
+            <source media="(max-width: 1000px)" srcset="images/folsom-american-river1000-500.webp">
+            <img src="images/folsom-american-river1500-750.webp" alt="River larger" width="1500" height="750">
+        </picture>
+        <h1>Prison Blues<br><br>Chamber of Commerce</h1>
+
+        <button id="joinBtn" onclick="document.location='join.html'">Join Now!</button>
+
+    </div>
+
+    <main>
+
+        <div id="home-grid">
+            <section class="sections" id="events">
+                <h3>Events</h3>
+                <hr class="horizontal-line">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum perferendis ipsum minus eum recusandae
+                    sunt hic ab similique, fuga voluptates vel eius ea non doloremque, deserunt ipsa dolore error
+                    reprehenderit.</p>
+            </section>
+
+            <section class="sections" id="weather">
+                <h3>Weather</h3>
+                <hr class="horizontal-line">
+                <h4>Current Temperature</h4>
+                <div id="currentWeather">
+                    <p><span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="images/placeholder.svg" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+                    <p>Wind Chill: <span id="windChill"></span> °F</p>
+                </div>
+                <h4>Weather Forecast</h4>
+                <div id="weatherForecast">
+                </div>
+            </section>
+
+            <h2>Member Spotlight</h2>
+
+            <section class="sections" id="spotlight1">
+                <h3>Member 1</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum velit cumque inventore quia libero
+                    sapiente! Molestiae, nesciunt. Delectus commodi esse similique debitis quam totam architecto a
+                    nihil?
+                    Porro, praesentium vero.</p>
+            </section>
+
+            <section class="sections" id="spotlight2">
+                <h3>Member 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illum eaque, ex, accusamus
+                    velit
+                    magnam tenetur deleniti possimus earum minima quod voluptate at commodi. Deserunt minima earum nam
+                    quis
+                    natus?</p>
+            </section>
+
+            <section class="sections" id="spotlight3">
+                <h3>Member 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos magni perferendis sint molestiae odio
+                    quae
+                    ullam quaerat omnis non mollitia, officia quis repellendus iure itaque cum similique quam eos
+                    maxime!
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <address>
+            Prison Blues Chamber of Commerce<br>
+            123 Commerce St<br>
+            Prison Blues, CA 95630<br>
+            USA
+        </address>
+
+        <div id="quicklinks">
+            <p>Quick Links</p>
+            <a href="https://visitfolsom.com" target="_blank">Visit Folsom</a><br>
+            <a href="http://bighouseprisonmuseum.org" target="_blank">Folsom Prison Museum</a><br>
+            <a href="https://folsomcasharttrail.com/the-trail/blog" target="_blank">Johnny Cash Trail</a><br>
+        </div>
+
+        <div id="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.webp" alt="fb icon" width="50" height="50">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.webp" alt="instagram icon" width="50" height="50">
+            </a>
+
+        </div>
+
+        <div id="copyright">
+            <p>&copy;<span id="currentyear"></span> Tracy Freeman
+        </div>
+        <div id="project">
+            <p>Project for WDD 230</p>
+        </div>
+        <div id="lastmod">
+            <p>Last modification: <span id="lastmodification"></span></p>
+        </div>
+
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/banner.js"></script>
+
+</body>
+
+</html>

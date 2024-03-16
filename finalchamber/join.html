@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prison Blues Chamber of Commerce: Join</title>
+    <meta name="description"
+        content="This site shares information about the chamber. Find community demographics and upcoming events. Learn abouto or membership options to join us.">
+    <meta name="author" content="Tracy Freeman">
+
+    <link rel="icon" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Prison Blues Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://nameerfdt.github.io/wdd230/chamber/images/folsom-american-river.jpeg">
+    <meta property="og:url" content="https://nameerfdt.github.io/wdd230/chamber/">
+</head>
+
+<body>
+    <header>
+        <!-- added toggle switch -->
+        <div id="darkmodeBtn">
+            ☀️ / 😎
+        </div>
+
+        <a id="hamburgermenu" href="#"></a>
+        <nav class="ham-nav">
+            <img class="logo-img" src="images/prisonblueslogo.copy.webp" alt="prison blues chamber logo" width="125"
+                height="125">
+            <a href=".">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1 class="child-pages">Membership Application</h1>
+        <hr>
+        <div class="form-grid">
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+
+                    <label class="info" for="fname">First Name*
+                        <input type="text" id="fname" name="fname" required></label>
+
+                    <label class="info" for="lname">Last Name*
+                        <input type="text" id="lname" name="lname" required></label>
+
+                    <label class="info" for="title">Job Title or Position*
+                        <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}$" required
+                            title="Must be minimum 7 characters (alpha-numeric, space, hyphens)"></label>
+
+                    <label class="info" for="email">Email* <input type="email" id="email" name="email"
+                            placeholder="anyone@email.com" title="Please enter a valid email address." required></label>
+
+                    <label class="info" for="mobile">Mobile Phone Number*
+                        <input type="tel" id="mobile" name="mobile" required></label>
+
+                    <label class="info" for="orgName">Business or Organization Name*
+                        <input type="text" id="orgName" name="orgName" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Membership Level
+                    </legend>
+
+                    <label class="sbs"><input type="radio" name="audience" value="Gold"> Gold
+                    </label>
+
+                    <label class="sbs"><input type="radio" name="audience" value="Silver"> Silver
+                    </label>
+
+                    <label class="sbs"><input type="radio" name="audience" value="Bronze"> Bronze
+                    </label>
+
+                    <label class="sbs"><input type="radio" name="audience" value="Non-Profit"> Non-Profit
+                        (Complimentary)
+                    </label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business Description
+                    </legend>
+                    <textarea id="description" name="description"
+                        placeholder="Enter a description of your business or organization."></textarea>
+                </fieldset>
+
+                <input type="hidden" id="timeStamp" name="timeStamp">
+
+                <input type="submit" value="Join the Chamber!" class="submitBtn">
+            </form>
+
+            <div id="memberships">
+                <section class="sections">
+                    <!-- <section class="membership"> -->
+                    <h3>Gold 🥇 Membership</h3>
+                    <p data-label=Membership:> $119 per month/$1429 annually</p>
+                    <p>Includes features of Non-Profit and Bronze and Silver Memberships PLUS:</p>
+                    <ul class="benefits">
+                        <li>Marketing consultation to discuss key messages to promote.</li>
+                        <li>Opportunity to advertise in business walk bags and expo bags.</li>
+                        <li>Listed as a Visibility Partner in annual Prison Blues Magazine & Relocation Guide.
+                        </li>
+                        <li>Choice of 4 marketing services throughout the year which include booth at an event,
+                            advertise in electronic newsletters, advertise on social. Marketing determined after
+                            marketing consultation.</li>
+                    </ul>
+                </section>
+                <section class="sections">
+                    <!-- <section class="membership"> -->
+                    <h3>Silver 🥈 Membership</h3>
+                    <p data-label=Membership:> $79 per month/$948 annually</p>
+                    <p>Includes features of Non-Profit and Bronze Membership PLUS:</p>
+                    <ul class="benefits">
+                        <li>Ticket to annual State of the City luncheon</li>
+                        <li>Ticket to annual Future Prison Blues economic forecast breakfast</li>
+                        <li>Ticket to Meet the Leaders series (3 events)</li>
+                        <li>Invitation to annual Legislative Reception</li>
+                        <li>Excel spreadsheet of all members address. </li>
+                        <li>Advice from local experts</li>
+                    </ul>
+                </section>
+                <section class="sections">
+                    <!-- <section class="membership"> -->
+                    <h3>Bronze 🥉 Membership</h3>
+                    <p data-label=Membership:> $295 annually</p>
+                    <p>Includes feature of Non-Profit Membership PLUS:</p>
+                    <ul class="benefits">
+                        <li>Enhanced online listing with images, key words and videos</li>
+                        <li>Complimentary attendance at networking events</li>
+                        <li>Free consultation with business development team</li>
+                        <li>Opportunity to purchase services and sponsor events at discounted rate</li>
+                        <li>Opportunity to post hot deals</li>
+                        <li>Welcome social post tagging business</li>
+                    </ul>
+                </section>
+                <section class="sections">
+                    <!-- <section class="membership"> -->
+                    <h3>Non-Profit Membership </h3>
+                    <p data-label=Membership:> Complimentary</p>
+                    <ul class="benefits">
+                        <li>Advocacy</li>
+                        <li>Basic Online Directory Listing</li>
+                        <li>E-News subscription</li>
+                        <li>Community Newsletter subscription</li>
+                        <li>Opportunity to post on job board</li>
+                        <li>Opportunity to register for events at member rate.</li>
+                    </ul>
+
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <address>
+            Prison Blues Chamber of Commerce<br>
+            123 Commerce St<br>
+            Prison Blues, CA 95630<br>
+            USA
+        </address>
+
+        <div id="quicklinks">
+            <p>Quick Links</p>
+            <a href="https://visitfolsom.com" target="_blank">Visit Folsom</a><br>
+            <a href="http://bighouseprisonmuseum.org" target="_blank">Folsom Prison Museum</a><br>
+            <a href="https://folsomcasharttrail.com/the-trail/blog" target="_blank">Johnny Cash Trail</a><br>
+        </div>
+
+        <div id="social">
+            <a href="https://facebook.com" target="_blank">
+                <!-- <img src="images/facebook.png" alt="fb icon"> -->
+                <img src="images/facebook.webp" alt="fb icon" width="50" height="50">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <!-- <img src="images/instagram.png" alt="instagram icon"> -->
+                <img src="images/instagram.webp" alt="instagram icon" width="50" height="50">
+            </a>
+
+        </div>
+
+        <div id="copyright">
+            <p>&copy;<span id="currentyear"></span> Tracy Freeman
+        </div>
+        <div id="project">
+            <p>Project for WDD 230</p>
+        </div>
+        <div id="lastmod">
+            <p>Last modification: <span id="lastmodification"></span></p>
+        </div>
+        <!-- <div class="lastmodification">
+            <p>Last modification: <span id="lastmodification"></span> </p>
+        </div> -->
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/join.js"></script>
+    <!-- <script src="scripts/darkmodeform.js"></script> -->
+</body>
+
+</html>

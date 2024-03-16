@@ -1,0 +1,434 @@
+:root {
+    --bkg-color: #3d6080;
+    }
+
+body {
+    margin: 0 auto;
+    background-color: var(--bkg-color);
+}
+
+#darkmodeBtn {
+    position: absolute;
+    color: white;
+    top: 1em;
+    right: 1em;
+    font-size: 1.5rem;
+    cursor: pointer;   
+}
+
+.darkmode {
+    background-color: black;
+    color: white;
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+    padding: 20px 30px;
+}
+
+.active::before {
+    content:"📍";
+  }
+
+.ham-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bkg-color);
+    margin: 0 auto;
+    padding: 0;
+}
+
+.ham-nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    padding: 3px;
+    font-size: 1.5em;
+}
+
+a:hover {
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#hamburgermenu {
+    position: absolute;
+    top: 1.5em;
+    right: 1em;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+
+.ham-nav a, #medium-label, #large-label {
+    display: none;
+}
+
+#hamburgermenu::before {
+	content: "≡";
+    background-color: var(--bkg-color);
+}
+
+.show a {
+    display: block;
+}
+
+#hamburgermenu.show::before {
+	content: "x";
+    background-color: var(--bkg-color);
+}
+
+#hero-box {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    font-family: mooli;
+    margin: 0 2em 0 2em;
+}
+#hero-box img {
+    width: 100%;
+    height: auto;
+}
+
+#small-label {
+    position: absolute;
+    top: 5px;
+    left: 75px;
+    color: black;
+    font-size: 2em;
+}
+/* #medium-label, #large-label {
+    display: none;
+} */
+
+#joinBtn {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    background-color: #edded2;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+h1 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+}
+
+main .child-pages {
+    display: block;
+    position: static;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    transform: none;
+    margin-top: 0;
+}
+
+main {
+    display: block;
+    font-family: Arial, sans-serif;
+    margin: 25px;
+}
+
+section { 
+    border: 1px solid black;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #edded2;
+}
+
+h3 {
+    margin-bottom: 1px;
+}
+
+.horizontal-line {
+    border-top: 1px solid rgba(109, 107, 107, 0.51);
+    margin-top: 0;
+}
+
+main h2 {
+    margin: 0;
+    text-align: center;
+    font-family: mooli;
+    color: white;
+}
+
+footer {
+    display: block;
+    background-color: var(--bkg-color);
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    margin: 2em;
+}
+
+#quicklinks p {
+    margin: 0;
+    font-weight: bold;
+}
+
+footer a {
+    color:white;
+    text-decoration: none;
+}
+
+address #quicklinks {
+    padding-top: 10px;
+}
+
+#social img{
+    padding: 10px;
+    display: inline;
+}
+
+h3, #visited {
+    text-align: center;
+}
+
+#discover-grid h2 {
+    font-size: 1.5em;
+}
+
+#discover-grid img {
+    width: 90%;
+    height: auto;
+}
+
+#discover-images {
+    margin: 20px;
+    color: white;
+    text-align: center;
+}
+
+#discover-images img {
+    border-radius: 10px;
+}
+
+.zoom {
+    transition: transform;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+li {
+    margin: 0;
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+p::before, li::before {
+    content: attr(data-label);
+    font-weight: bold;
+}
+
+.form-grid {
+    display: block;
+
+}
+/* this is the groups of info */
+form fieldset {
+    border-radius: 10px;
+    padding-bottom: 1em;
+    padding-left: 2em;
+}
+
+/* this is the fieldset titles */
+legend {
+    padding: .5em;
+    margin: 0;
+    color: white;
+    font-size: 1.5em;
+}
+
+/* this if first fieldset */
+form label.info, label.sbs {
+    display: block;
+    padding-top: 1em;
+    font-size: 1em;
+    color: white;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    padding-left: 5px;
+    max-width: 50rem;
+    font-size: 1em;
+
+} 
+
+form label.info input {
+    display: block;
+    padding: .5em;
+    border: 1px solid black;
+    width: 95%;
+    max-width: 50rem;
+} 
+
+form input.submitBtn {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 1em;
+    padding: .25em;
+    margin-top: .5em;
+    margin-left: 1em;
+    width: 50%;
+    max-width: 20rem;
+}
+
+ul.benefits li {
+    list-style-type: disc ;
+    padding-bottom: 5px;
+}
+
+label.sbs input {
+    height: 20px;
+    width: 20px;
+}
+
+#thankyou {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 2em;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.grid section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.grid h2 {
+    margin: 1em 0;
+}
+
+.grid p{
+    margin-bottom: .5em;
+    margin-top: 0;
+    font-size: 1.25em;
+    padding: 0 5px;
+}
+
+.grid a {
+    margin: 1em;
+    font-size: 1em;
+}
+
+.dirToggle {
+    padding: 1em;
+    text-align: center;
+}
+
+#grid, #list {
+    padding: 20px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    align-items: center;
+    padding: 5px;
+    /* font-size: 1em; */
+}
+
+/* .list section img, .list section p:nth-child(4), .list section p:last-child{
+    display: none;
+} */
+
+.list section img, .list section p:not(:nth-child(2)){
+    display: none;
+}
+
+.list section h3 {
+    grid-column: 1/2;
+    font-size: 1em;
+} 
+
+.list section:nth-child(even){
+    background-color: lightgrey;
+}
+
+#currentWeather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#weatherForecast {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+h4 {
+    padding-bottom: 0;
+    text-align: center;
+}
+#weatherForecast p, #weatherForecast figure {
+    margin: 0;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+#currentWeather p, #currentWeather figure{
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+} 
+
+#currentWeather img, #weatherForecast img {
+    display: none;
+    width: 50px; 
+    height: auto;
+}
+
+#weatherForecast img {
+    justify-self: center;
+}
+
+#banner {
+    display: none;
+    margin: 1em auto;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    font-size: 1.5em;
+  }
+
+  #closeBanner {
+    padding-left: 15px;
+  }

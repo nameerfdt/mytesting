@@ -1,0 +1,110 @@
+{
+    "members": [
+      {
+        "name": "Intel Corporation",
+        "address": "1900 Prairie City Road",
+        "city_state": "Folsom, CA",
+        "phone": "916-356-6610",
+        "website": "https://www.intel.com/",
+        "image": [
+            {
+              "src":"https://nameerfdt.github.io/wdd230/chamber/images/intel.webp",
+              "alt":"intel logo image"
+            }
+        ],
+        "membership_level": "Gold",
+        "description": "Intel is a multinational corporation known for designing and manufacturing semiconductor chips and other related products. Intel has a significant presence in Folsom, with a large campus that houses research, development, and manufacturing facilities."
+      },
+      {
+        "name": "Micron Technology, Inc.",
+        "address": "2001 Danbury Street",
+        "city_state": "Folsom, CA",
+        "phone": "555-987-6543",
+        "website": "https://www.micron.com/",
+        "image": [
+            {
+              "src":"https://nameerfdt.github.io/wdd230/chamber/images/micron-logo.webp",
+              "alt": "micron logo image"
+            }
+        ],
+        "membership_level": "Gold",
+        "description": "Micron is major player in the semiconductor industry, specializing in memory and storage solutions. Micron has operations in Folsom, including research and development facilities focused on advancing memory technologies."
+      },
+      {
+        "name": "Verizon",
+        "address": "221 Iron Point Road",
+        "city_state": "Folsom, CA",
+        "phone": "555-567-8901",
+        "website": "https://www.verizon.com/",
+        "image": [
+          {
+            "src":"https://nameerfdt.github.io/wdd230/chamber/images/verizon.webp",
+            "alt":"verizon logo image"
+          }
+        ],
+        "membership_level": "Silver",
+        "description": "Verizon Communications is a telecommunications company providing wireless communication services, internet access, and other related products and services. Verizon has a significant presence in Folsom, serving both residential and business customers in the area."
+      },
+      {
+        "name": "PowerSchool",
+        "address": "1000 Blue Ravine Road",
+        "city_state": "Folsom, CA",
+        "phone": "916-294-8900",
+        "website": "https://www.powerschool.com/",
+        "image": [
+          {
+            "src":"https://nameerfdt.github.io/wdd230/chamber/images/powerschool.webp",
+            "alt":"powerschool logo image"
+          }
+        ],
+        "membership_level": "Silver",
+        "description": "PowerSchool is a leading provider of cloud-based software solutions for K-12 education. Headquartered in Folsom, PowerSchool offers a comprehensive suite of products and services designed to streamline school operations, improve student outcomes, and enhance the educational experience."
+      },
+      {
+        "name": "Waste Connections",
+        "address": "3601 Hwy 50 East",
+        "city_state": "Folsom, CA",
+        "phone": "916-609-3100",
+        "website": "https://www.wasteconnections.com/",
+        "image": [
+          {
+            "src":"https://nameerfdt.github.io/wdd230/chamber/images/wasteconnections.webp",
+            "alt":"waste connections logo image"
+          }
+        ],
+        "membership_level": "Bronze",
+        "description": "Waste Connections is a waste management company providing collection, disposal, recycling, and other environmental services. With operations across North America, Waste Connections serves residential, commercial, industrial, and municipal customers in Folsom and surrounding areas."
+      },
+      {
+        "name": "California Independent System Operator (CAISO)",
+        "address": "250 Outcropping Way",
+        "city_state": "Folsom, CA",
+        "phone": "916-608-7170",
+        "website": "http://www.caiso.com/",
+        "image": [
+          {
+            "src":"https://nameerfdt.github.io/wdd230/chamber/images/caiso.webp",
+            "alt":"CAISO logo image"
+          }
+        ],
+        "membership_level": "Bronze",
+        "description": "CAISO is a nonprofit public benefit corporation that manages the flow of electricity across the high-voltage power grid for most of California and a small part of Nevada. Located in Folsom, CAISO plays a crucial role in ensuring the reliability and stability of the state's electrical grid."
+      },
+      {
+        "name": "Caliber Home Loans",
+        "address": "9200 Oak Avenue, Suite 100",
+        "city_state": "Folsom, CA",
+        "phone": "800-401-6587",
+        "website": "https://www.caliberhomeloans.com/",
+        "image": [
+          {
+            "src":"https://nameerfdt.github.io/wdd230/chamber/images/caliber-home.webp",
+            "alt":"CAISO logo image"
+          }
+        ],
+        "membership_level": "Non-Profit",
+        "description": "Caliber Home Loans is a full-service mortgage banking company offering home loans and refinancing options to customers."
+      }
+    ]
+  }
+  

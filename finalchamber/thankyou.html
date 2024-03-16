@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prison Blues Chamber of Commerce: Join</title>
+    <meta name="description"
+        content="This site shares information about the chamber. Find community demographics and upcoming events. Learn abouto or membership options to join us.">
+    <meta name="author" content="Tracy Freeman">
+
+    <link rel="icon" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Prison Blues Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://nameerfdt.github.io/wdd230/chamber/images/folsom-american-river.jpeg">
+    <meta property="og:url" content="https://nameerfdt.github.io/wdd230/chamber/">
+</head>
+
+<body>
+    <header>
+        <!-- added toggle switch -->
+        <div id="darkmodeBtn">
+            ☀️ / 😎
+        </div>
+
+        <a id="hamburgermenu" href="#"></a>
+        <nav class="ham-nav">
+            <img class="logo-img" src="images/prisonblueslogo.copy.webp" alt="prison blues chamber logo" width="125"
+                height="125">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="">Directory</a>
+            <a href="." class="active">Join</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1 class="child-pages">Prison Blues Chamber of Commerce</h1>
+        <hr>
+
+        <div id="hero-box">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/folsom-american-river1000-500.webp">
+                <source media="(max-width: 1000px)" srcset="images/folsom-american-river1000-500.webp">
+                <img src="images/folsom-american-river1500-750.webp" alt="River larger" width="1500" height="750">
+            </picture>
+        </div>
+
+        <p id="thankyou">Thank you for your interest in becoming a member of the Prison Blues Chamber of
+            Commerce.<br><br>Your application has been received.</p>
+
+    </main>
+
+    <footer>
+        <address>
+            Prison Blues Chamber of Commerce<br>
+            123 Commerce St<br>
+            Prison Blues, CA 95630<br>
+            USA
+        </address>
+
+        <div id="quicklinks">
+            <p>Quick Links</p>
+            <a href="https://visitfolsom.com" target="_blank">Visit Folsom</a><br>
+            <a href="http://bighouseprisonmuseum.org" target="_blank">Folsom Prison Museum</a><br>
+            <a href="https://folsomcasharttrail.com/the-trail/blog" target="_blank">Johnny Cash Trail</a><br>
+        </div>
+
+        <div id="social">
+            <a href="https://facebook.com" target="_blank">
+                <!-- <img src="images/facebook.png" alt="fb icon"> -->
+                <img src="images/facebook.webp" alt="fb icon" width="50" height="50">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <!-- <img src="images/instagram.png" alt="instagram icon"> -->
+                <img src="images/instagram.webp" alt="instagram icon" width="50" height="50">
+            </a>
+
+        </div>
+
+        <div id="copyright">
+            <p>&copy;<span id="currentyear"></span> Tracy Freeman
+        </div>
+        <div id="project">
+            <p>Project for WDD 230</p>
+        </div>
+        <div id="lastmod">
+            <p>Last modification: <span id="lastmodification"></span></p>
+        </div>
+        <!-- <div class="lastmodification">
+            <p>Last modification: <span id="lastmodification"></span> </p>
+        </div> -->
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/join.js"></script>
+</body>
+
+</html>
