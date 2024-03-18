@@ -4,38 +4,37 @@ async function getMemberData() {
     const response = await fetch(membersURL);
     const data = await response.json();
 
-   // Filter gold members
+   // Filter gold members into an array
    const goldMembers = data.members.filter(member => member.membership_level === 'Gold');
 
    // Randomly select a gold member
-   const randomGoldIndex = Math.floor(Math.random() * goldMembers.length);
-   const selectedGoldMember = goldMembers[randomGoldIndex];
+   const randomGoldMember = Math.floor(Math.random() * goldMembers.length);
+   const selectedGoldMember = goldMembers[randomGoldMember];
 
    // Update HTML div with selected gold member's information
    const goldMemberDiv = document.getElementById("goldMember");
    if (selectedGoldMember) {
        goldMemberDiv.innerHTML = `
-           <h2>${selectedGoldMember.name}</h2>
+           <h4>${selectedGoldMember.name}</h4>
            <p>${selectedGoldMember.description}</p>
            <p>Address: ${selectedGoldMember.address}, ${selectedGoldMember.city_state}</p>
            <p>Phone: ${selectedGoldMember.phone}</p>
            <p><a href="${selectedGoldMember.website}" target="_blank">${selectedGoldMember.website}</a></p>
-
        `;
    }
 
-    // Filter silver members
+    // Filter silver members into an array
     const silverMembers = data.members.filter(member => member.membership_level === 'Silver');
 
     // Randomly select a silver member
-    const randomSilverIndex = Math.floor(Math.random() * silverMembers.length);
-    const selectedSilverMember = silverMembers[randomSilverIndex];
+    const randomSilverMember = Math.floor(Math.random() * silverMembers.length);
+    const selectedSilverMember = silverMembers[randomSilverMember];
 
     // Update HTML div with selected silver member's information
     const silverMemberDiv = document.getElementById("silverMember");
     if (selectedSilverMember) {
         silverMemberDiv.innerHTML = `
-            <h2>${selectedSilverMember.name}</h2>
+            <h4>${selectedSilverMember.name}</h4>
             <p>${selectedSilverMember.description}</p>
             <p>Address: ${selectedSilverMember.address}, ${selectedSilverMember.city_state}</p>
             <p>Phone: ${selectedSilverMember.phone}</p>
@@ -43,18 +42,18 @@ async function getMemberData() {
         `;
     }
 
-        // Filter bronze members
-        const brozeMembers = data.members.filter(member => member.membership_level === 'Silver');
+        // Filter bronze members into an array
+        const bronzeMembers = data.members.filter(member => member.membership_level === 'Bronze');
 
-        // Randomly select a silver member
-        const randomBronzeIndex = Math.floor(Math.random() * silverMembers.length);
-        const selectedBronzeMember = silverMembers[randomBronzeIndex];
+        // Randomly select a bronze member
+        const randomBronzeMember = Math.floor(Math.random() * bronzeMembers.length);
+        const selectedBronzeMember = bronzeMembers[randomBronzeMember];
     
-        // Update HTML div with selected silver member's information
+        // Update HTML div with selected bronze member's information
         const bronzeMemberDiv = document.getElementById("bronzeMember");
         if (selectedBronzeMember) {
             bronzeMemberDiv.innerHTML = `
-                <h2>${selectedBronzeMember.name}</h2>
+                <h4>${selectedBronzeMember.name}</h4>
                 <p>${selectedBronzeMember.description}</p>
                 <p>Address: ${selectedBronzeMember.address}, ${selectedBronzeMember.city_state}</p>
                 <p>Phone: ${selectedBronzeMember.phone}</p>
