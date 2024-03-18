@@ -4,6 +4,26 @@ async function getMemberData() {
     const response = await fetch(membersURL);
     const data = await response.json();
 
+   // Filter gold members
+   const goldMembers = data.members.filter(member => member.membership_level === 'Gold');
+
+   // Randomly select a gold member
+   const randomGoldIndex = Math.floor(Math.random() * goldMembers.length);
+   const selectedGoldMember = goldMembers[randomGoldIndex];
+
+   // Update HTML div with selected gold member's information
+   const goldMemberDiv = document.getElementById("goldMember");
+   if (selectedGoldMember) {
+       goldMemberDiv.innerHTML = `
+           <h2>${selectedGoldMember.name}</h2>
+           <p>${selectedGoldMember.description}</p>
+           <p>Address: ${selectedGoldMember.address}, ${selectedGoldMember.city_state}</p>
+           <p>Phone: ${selectedGoldMember.phone}</p>
+           <p><a href="${selectedGoldMember.website}" target="_blank">Website</a></p>
+
+       `;
+   }
+
     // Filter silver members
     const silverMembers = data.members.filter(member => member.membership_level === 'Silver');
 
