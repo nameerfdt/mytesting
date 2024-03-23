@@ -1,0 +1,44 @@
+:root {
+    --bkg-color: #3d6080;
+    }
+
+body {
+    margin: 0 auto;
+    background-color: var(--bkg-color);
+}
+
+div a {
+    padding: 10px;
+}
+
+footer {
+    display: block;
+    background-color: var(--bkg-color);
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    margin: 2em;
+    gap: 10px;
+}
+
+#quicklinks p {
+    margin: 0;
+    font-weight: bold;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+/* address #quicklinks {
+    padding-top: 10px;
+}
+
+#social img{
+    padding: 10px;
+    display: inline;
+} */
+

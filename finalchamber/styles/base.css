@@ -102,29 +102,34 @@ a:hover {
     color: black;
     font-size: 2em;
 }
-/* #medium-label, #large-label {
-    display: none;
-} */
 
 #joinBtn {
     position: absolute;
-    top: 5%;
-    left: 3%;
+    top: 3%;
+    left: 2%; 
     background-color: #edded2;
-    padding: 10px 10px;
+    padding: 5px 5px;
     cursor: pointer;
     border-radius: 10px;
 }
 
 h1 {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: .5em;
 }
 
-main .child-pages {
+/* h1 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    white-space: nowrap;
+} */
+
+/* main .child-pages {
     display: block;
     position: static;
     font-size: 2em;
@@ -132,7 +137,7 @@ main .child-pages {
     text-align: center;
     transform: none;
     margin-top: 0;
-}
+} */
 
 main {
     display: block;
@@ -172,6 +177,7 @@ footer {
     text-align: center;
     padding-top: 10px;
     margin: 2em;
+    gap: 10px;
 }
 
 #quicklinks p {
@@ -180,8 +186,9 @@ footer {
 }
 
 footer a {
-    color:white;
+    color: white;
     text-decoration: none;
+    padding: 8px;
 }
 
 address #quicklinks {
@@ -204,6 +211,7 @@ h3, #visited {
 #discover-grid img {
     width: 90%;
     height: auto;
+    padding: 10px 0;
 }
 
 #discover-images {
@@ -230,23 +238,22 @@ li {
     padding-bottom: 10px;
 }
 
-p::before, li::before {
+p::before, li::before, #events p::before {
     content: attr(data-label);
     font-weight: bold;
 }
 
 .form-grid {
     display: block;
-
+    padding: 2em;
 }
-/* this is the groups of info */
+
 form fieldset {
     border-radius: 10px;
     padding-bottom: 1em;
     padding-left: 2em;
 }
 
-/* this is the fieldset titles */
 legend {
     padding: .5em;
     margin: 0;
@@ -254,7 +261,6 @@ legend {
     font-size: 1.5em;
 }
 
-/* this if first fieldset */
 form label.info, label.sbs {
     display: block;
     padding-top: 1em;
@@ -309,11 +315,15 @@ label.sbs input {
     padding: 2em;
 }
 
-
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20px;
+    gap: 30px;
+    padding: 0 2em;
+}
+
+article{
+    padding: 0 2em;
 }
 
 .grid section {
@@ -348,6 +358,11 @@ label.sbs input {
     padding: 20px;
 }
 
+.grid img {
+    width: 40%;
+    height: auto;
+}
+
 .list {
     display: flex;
     flex-direction: column;
@@ -359,12 +374,7 @@ label.sbs input {
     margin: 0;
     align-items: center;
     padding: 5px;
-    /* font-size: 1em; */
 }
-
-/* .list section img, .list section p:nth-child(4), .list section p:last-child{
-    display: none;
-} */
 
 .list section img, .list section p:not(:nth-child(2)){
     display: none;
@@ -429,6 +439,18 @@ h4 {
     font-size: 1.5em;
   }
 
-  #closeBanner {
-    padding-left: 15px;
+#closeBanner {
+padding-left: 15px;
+  }
+
+  #goldMember, #silverMember, #bronzeMember {
+    text-align: center;
+  }
+
+#events p, .sections {
+    font-size: 16px;
+  }
+
+.sections {
+    padding: 1em 2em;
   }

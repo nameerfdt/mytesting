@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Prison Blues Chamber of Commerce</title>
+    <title>Prison Blues Chamber of Commerce Discovery, Membership Directory, Events</title>
     <meta name="description"
-        content="This site shares information about the chamber. Find community demographics and upcoming events. Learn how to join the chamber.">
+        content="This site shares information about the chamber of commerce and it's memebers. Find community demographics and upcoming events. Learn how to join the chamber.">
     <meta name="author" content="Tracy Freeman">
 
-    <link rel="icon" href="favicon-16x16.png">
+    <link rel="icon" href="./favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -35,7 +35,7 @@
         <a id="hamburgermenu" href="#"></a>
         <nav class="ham-nav">
             <img class="logo-img" src="images/prisonblueslogo.copy.webp" alt="prison blues chamber logo" width="125"
-                height="125">
+                height="125" onclick="document.location='.'">
             <a href="." class="active">Home</a>
             <a href="discover.html">Discover</a>
             <a href="directory.html">Directory</a>
@@ -43,30 +43,58 @@
         </nav>
     </header>
     <div id="banner">
-        <p>ATTENTION! All visitors and users are welcome to attend the Chamber of Commerce's meet and greet event on
+        <p>ATTENTION! All visitors and users are welcome to attend the Chamber of Commerce's Meet and Greet event on
             Wednesday at 7:00 p.m. <span id="closeBanner">❌</span></p>
     </div>
+
+    <h1>Prison Blues Chamber of Commerce</h1>
+
+
     <div id="hero-box">
         <picture>
             <source media="(max-width: 500px)" srcset="images/folsom-american-river1000-500.webp">
             <source media="(max-width: 1000px)" srcset="images/folsom-american-river1000-500.webp">
-            <img src="images/folsom-american-river1500-750.webp" alt="River larger" width="1500" height="750">
+            <img src="images/folsom-american-river1500-750.webp"
+                alt="hero image of rainbow bridge of over the american river" width="1500" height="750">
         </picture>
-        <h1>Prison Blues<br><br>Chamber of Commerce</h1>
+        <!-- <h1>Prison Blues Chamber of Commerce</h1> -->
 
         <button id="joinBtn" onclick="document.location='join.html'">Join Now!</button>
 
     </div>
 
     <main>
-
         <div id="home-grid">
             <section class="sections" id="events">
                 <h3>Events</h3>
                 <hr class="horizontal-line">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum perferendis ipsum minus eum recusandae
-                    sunt hic ab similique, fuga voluptates vel eius ea non doloremque, deserunt ipsa dolore error
-                    reprehenderit.</p>
+                <p data-label="March 27:"> Prison Blues Chamber of Commerce Meet and Greet. 7:00 pm at 123 Commerce St.
+                    Come meet
+                    current chamber members and find out about upcoming networking opportunities. Hope to see you there!
+                </p>
+                <p data-label="March 30:"> Festival of Eggs: 8-11 am at Lembi Park. Come join 2nd Annual Spring
+                    Eggstravagnaza event,
+                    include pancake breakfast, vendor displays and activities including an egg hunt.</p>
+                <p data-label="April 12:"> CHAMBER Hwy 50 Power lunch - Expand your networking efforts and meet regional
+                    partners.
+                </p>
+                <p data-label="April 17:"> CHAMBER: Kick Start Your Partnership - Meet other members over breakfast as
+                    we help you get
+                    setup with your account and share amazing benefits you'll receive with your partnership.</p>
+                <p data-label="April 19:"> Spring Senior Resource Fair Ad Prison Blues Senior Center. 6:00am - 8:00pm
+                </p>
+                <p data-label="April 26:"> CHAMBER: Biz Walk - Join as we canvas a dedicated area in Prison Blues to
+                    check in on
+                    businesses and see how we can better serve them.</p>
+                <p data-label="May:"> May is Bike Month! Look for a variety of cycling events and activities take place
+                    throughout the month.
+                </p>
+                <p data-label="May 15:"> CHAMBER: Business Builder - Hear from successful businesses on how they use
+                    first class
+                    customer service to grow and expand their business.</p>
+                <p data-label="May 23:"> CHAMBER: Meet the Leaders - This event provides you access to some of the most
+                    influential
+                    people in our city, county and region.</p>
             </section>
 
             <section class="sections" id="weather">
@@ -76,7 +104,7 @@
                 <div id="currentWeather">
                     <p><span id="current-temp"></span></p>
                     <figure>
-                        <img id="weather-icon" src="images/placeholder.svg" alt="">
+                        <img id="weather-icon" src="images/placeholder.svg" alt="weather description">
                         <figcaption></figcaption>
                     </figure>
                     <p>Wind Speed: <span id="windSpeed"></span> mph</p>
@@ -90,20 +118,18 @@
             <h2>Member Spotlight</h2>
 
             <section class="sections" id="spotlight1">
-                <h3>Gold Member</h3>
-                <div id="goldMember">
-
-                </div>
+                <h3>GOLD MEMBER</h3>
+                <div id="goldMember"></div>
             </section>
 
             <section class="sections" id="spotlight2">
-                <h3>Member 2</h3>
-                <div id="silverMember">
+                <h3>SILVER MEMBER</h3>
+                <div id="silverMember"></div>
             </section>
 
             <section class="sections" id="spotlight3">
-                <h3>Member 3</h3>
-                <div id="bronzeMember">
+                <h3>BRONZE MEMBER</h3>
+                <div id="bronzeMember"></div>
             </section>
         </div>
     </main>
@@ -113,13 +139,13 @@
             Prison Blues Chamber of Commerce<br>
             123 Commerce St<br>
             Prison Blues, CA 95630<br>
-            USA
+            thechamber@prisonblues.org
         </address>
 
         <div id="quicklinks">
             <p>Quick Links</p>
             <a href="https://visitfolsom.com" target="_blank">Visit Folsom</a><br>
-            <a href="http://bighouseprisonmuseum.org" target="_blank">Folsom Prison Museum</a><br>
+            <a href="https://www.parks.ca.gov/?page_id=500" target="_blank">Folsom Lake</a><br>
             <a href="https://folsomcasharttrail.com/the-trail/blog" target="_blank">Johnny Cash Trail</a><br>
         </div>
 
@@ -127,7 +153,7 @@
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.webp" alt="fb icon" width="50" height="50">
             </a>
-            <a href="https://instagram.com" target="_blank">
+            <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F" target="_blank">
                 <img src="images/instagram.webp" alt="instagram icon" width="50" height="50">
             </a>
 
@@ -151,7 +177,7 @@
     <script src="scripts/weather.js"></script>
     <script src="scripts/forecast.js"></script>
     <script src="scripts/banner.js"></script>
-    <script src="spotlight1.js"></script>
+    <script src="scripts/spotlight.js"></script>
 
 </body>
 
