@@ -3,7 +3,7 @@
       {
         "Vehicle": {
             "Name": "Honda Metro Scooter",
-            "Image": ""
+            "Image": "1 pic"
         },
         "MaxPersons": 1,
         "Reservation": {
@@ -18,7 +18,7 @@
       {
         "Vehicle": {
             "Name": "Honda Dio Scooter",
-            "Image": ""
+            "Image": "2 pic"
         },
         "MaxPersons": 2,
         "Reservation": {
@@ -33,7 +33,7 @@
       {
         "Vehicle": {
             "Name": "Honda PCX150 Scooter",
-            "Image": ""
+            "Image": "3 pic"
         },
         "MaxPersons": 2,
         "Reservation": {
@@ -48,7 +48,7 @@
       {
         "Vehicle": {
             "Name": "Honda Pioneer ATV",
-            "Image": ""
+            "Image": "4 pic"
         },
         "MaxPersons": 4,
         "Reservation": {
@@ -63,7 +63,7 @@
       {
         "Vehicle": {
             "Name": "Jeep Wrangler - 4 door with a/c",
-            "Image": ""
+            "Image": "5 pic"
         },
         "MaxPersons": 5,
         "Reservation": {
@@ -78,7 +78,7 @@
       {
         "Vehicle": {
             "Name": "Jeep Wrangler - 2 door",
-            "Image": ""
+            "Image": "6 pic"
         },
         "MaxPersons": 4,
         "Reservation": {
