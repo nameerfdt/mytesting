@@ -1,3 +1,16 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#agreement {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 2em 0;
+}
+ul {
+    list-style: none;
+}
 
 form {
     display: grid;
@@ -20,7 +33,7 @@ legend {
 /* label for each field */
 label {
     display: block;
-    padding-top: 1em;
+    /* padding-top: 1em; */
     font-size: 1.5em;
 }
 
@@ -79,5 +92,9 @@ textarea {
 }
 
 #submit {
+    grid-column: 1/3;
+}
+
+#agreement {
     grid-column: 1/3;
 }
