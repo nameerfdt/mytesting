@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scoots Rentals Cozumel</title>
+    <meta name="description"
+        content="Welcome to Scoots. We're here for all your rental needs to tour the beautiful island of Cozumel. Rent motor scooters, ATV's and Jeeps for half day or full day.">
+    <meta name="author" content="Tracy Freeman">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- Need a favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Scoots: Cozumel Motor Scooter Rental Company">
+    <meta property="og:type" content="website">
+    <!-- Need a image for facebook -->
+    <meta property="og:image" content="Absolute URL">
+    <meta property="og:url" content="https://nameerfdt.github.io/wdd230/scoots">
+</head>
+
+<body>
+    <div class="content">
+        <header>
+
+            <h1 class="title">Scoots Rentals</h1>
+
+            <a id="hamburgermenu"></a>
+            <nav class="navigation">
+                <a href=".">Home</a>
+                <a href="rentals.html">Rentals</a>
+                <a href="reservations.html" class="active">Reservations</a>
+                <a href="explore.html">Explore</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+        </header>
+
+        <main>
+            <h2>Reservations</h2>
+            <div class="grid">
+
+                <section id="agreement">
+                    <h3>Rental Services and Agreements</h3>
+                    <ul>
+                        <li>A $50 security deposit is required to confirm reservations.</li>
+                        <li>A valid driver's license is required in hand at the time of rental.</li>
+                        <li>No one under the age of 12 years of age is allowed to ride on the scooters.</li>
+                        <li>Fuel charge is not included.</li>
+                        <li>Unlimited mileage.</li>
+                        <li>Liability insurance is included.</li>
+                        <li>Damage insurance is available for purchase.</li>
+                        <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                        <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                        <li>Rentals may be returned to either physical location.</li>
+                    </ul>
+                </section>
+            </div>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Renters Information</legend>
+
+                    <label class="info" for="fname">First Name*
+                        <input type="text" id="fname" name="fname" required></label>
+
+                    <label class="info" for="lname">Last Name*
+                        <input type="text" id="lname" name="lname" required></label>
+
+                    <label class="info" for="mobile">Mobile Phone Number*
+                        <input type="tel" id="mobile" name="mobile" required></label>
+
+                    <label class="info" for="homestateorcountry">Home State or Country*
+                        <input type="tel" id="homestateorcountry" name="homestateorcountry" required></label>
+
+                    <label class="info" for="email">Email* <input type="email" id="email" name="email"
+                            placeholder="anyone@email.com" title="Please enter a valid email address." required></label>
+                </fieldset>
+
+                <fieldset id="cruise">
+                    <legend>For cruise passengers only:</legend>
+                    <label class="info" for="cruiseLine">Select Cruise Line:</label>
+                    <select id="cruiseLine" name="cruiseLine" onchange="toggleOtherCruiseLine(this)">
+                        <option value="">Select Cruise Line</option>
+                        <option value="royal-caribbean">Royal Caribbean International</option>
+                        <option value="carnival">Carnival Cruise Line</option>
+                        <option value="norwegian">Norwegian Cruise Line</option>
+                        <option value="disney">Disney Cruise Line</option>
+                        <option value="celebrity">Celebrity Cruises</option>
+                        <option value="princess">Princess Cruises</option>
+                        <option value="holland-america">Holland America Line</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <div id="otherCruiseLine">
+                        <div>Other Cruise Line:</div>
+                        <input type="text" id="otherCruiseLineInput" name="otherCruiseLineInput"
+                            placeholder="Enter other cruise line">
+                    </div>
+                </fieldset>
+
+                <fieldset id="special">
+                    <legend>Special Accommodations/Comments</legend>
+                    <textarea id="comments" name="comments"
+                        placeholder="Enter any special accommodations needed"></textarea>
+                </fieldset>
+
+                <fieldset id="rentalDates">
+                    <legend>Rental Dates
+                    </legend>
+                    <div class="rentalDates">
+                        <label class="info" for="departureDate">Departure Date:</label>
+                        <input type="date" id="departureDate" name="departureDate" required>
+                    </div>
+                    <div class="rentalDates">
+                        <label class="info" for="returnDate">Return Date:</label>
+                        <input type="date" id="returnDate" name="returnDate" required>
+                    </div>
+
+                </fieldset>
+
+                <fieldset id="rentalType">
+                    <legend>Rental Type
+                    </legend>
+
+                    <label class="sbs"><input type="radio" name="audience" value="Gold"> Honda Metro
+                        Scooter, 1
+                        person
+                    </label>
+
+                    <label class="sbs"><input type="radio" name="audience" value="Silver"> Honda Dio
+                        Scooter, 2
+                        person
+                    </label>
+
+                    <label class="sbs"><input type="radio" name="audience" value="Bronze"> Honda PCX150
+                        Scooter, 2
+                        person
+                    </label>
+
+                    <label class="sbs"><input type="radio" name="audience" value="Non-Profit"> Honda Pioneer
+                        1000
+                        ATV -
+                        4 person
+                    </label>
+
+                    <label class="sbs"><input type="radio" name="audience" value="Non-Profit"> Jeep Wrangler
+                        - 4
+                        door
+                        manuel with A/C, 5 person
+                    </label>
+
+                    <label class="sbs"><input type="radio" name="audience" value="Non-Profit"> Jeep Wrangler
+                        - 2
+                        door,
+                        open air, manual, 4 person
+                    </label>
+
+                </fieldset>
+                <input type="hidden" id="timeStamp" name="timeStamp">
+
+                <input id="submit" type="submit" value="Make My Reservation!" class="submitBtn">
+            </form>
+        </main>
+
+
+
+
+        <footer>
+            <p>&copy; <span id="currentyear"></span> <br>Tracy Freeman<br> United States of America</p>
+
+            <div class="lastmodification">
+                <p>Last update: <span id="lastmodification"></span> </p>
+            </div>
+        </footer>
+        <script src="scripts/getdates.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/cruise.js"></script>
+
+</body>
+
+</html>

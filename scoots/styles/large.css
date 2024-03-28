@@ -1,13 +1,8 @@
 @media screen and (min-width: 1200px) {
 
     h1 {
-        font-size: 5em;
+        font-size: 6em;
     }
-
-    /* header h2 {
-        grid-row: 2/3;
-        font-size: 8em;
-    } */
 
     .navigation a {
         display: flex;
@@ -17,6 +12,7 @@
         margin: 0 auto;
         padding: 0 1em;
     }
+
     h2 {
         text-align: center;
         font-size: 7em;
@@ -30,4 +26,4 @@
       iframe {
         width: 100%;
       }
-}
+    }
