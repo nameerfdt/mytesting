@@ -34,7 +34,7 @@
             <nav class="navigation">
                 <a href=".">Home</a>
                 <a href="rentals.html">Rentals</a>
-                <a href="reservations.html">Reservations</a>
+                <a href="reservations2.html">Reservations</a>
                 <a href="explore.html">Explore</a>
                 <a href="contact.html" class="active">Contact</a>
             </nav>
@@ -45,25 +45,19 @@
 
             <h2>Contact Us!</h2>
 
-            <div class="form-grid">
-                <form method="get" action="thankyou.html">
+            <div class="grid">
+                <form id="contactus" method="get" action="thankyou.html">
                     <fieldset>
 
-                        <label class="info" for="fname">First Name*
-                            <input type="text" id="fname" name="fname" required></label>
-
-                        <label class="info" for="lname">Last Name*
-                            <input type="text" id="lname" name="lname" required></label>
-
-                        <!-- <label class="info" for="mobile">Mobile Phone Number
-                            <input type="tel" id="mobile" name="mobile" requried></label> -->
+                        <label class="info" for="name">Name*
+                            <input type="text" id="name" name="name" required></label>
 
                         <label class="info" for="email">Email* <input type="email" id="email" name="email"
                                 placeholder="anyone@email.com" title="Please enter a valid email address."
                                 required></label>
 
-                        <label class="info" for="comment">Comment*
-                            <input type="text" id="comment" name="comment" required></label>
+                        <label class="info" for="textarea">Comments:</label>
+                        <textarea id="textarea" name="comments"></textarea>
 
                         <input type="hidden" id="timeStamp" name="timeStamp">
 
