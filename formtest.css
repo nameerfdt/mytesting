@@ -1,0 +1,83 @@
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 2em;
+    grid-gap: 10px;
+}
+
+fieldset {
+    border-radius: 10px;
+    padding: 2em;
+}
+
+legend {
+    padding: .5em;
+    margin: 0;
+    color:red;
+    font-size: 1.5em;
+}
+/* label for each field */
+label {
+    display: block;
+    padding-top: 1em;
+    font-size: 1.5em;
+}
+
+/* renter info input */
+label.info input {
+    display: inline-block;
+    width: 95%; 
+    font-size: 1.5em;
+}
+
+#rentalType {
+    grid-row: 1/5;
+    grid-column: 2/3;
+}
+
+#cruise {
+    grid-column: 1/2;
+}
+
+#special {
+    grid-row: 3/4;
+}
+
+/* cruise ship names */
+select {
+    font-size: 1.5em;
+    text-align: center;
+    width: 95%;
+    padding: .5em 0;
+}
+
+
+textarea {
+    width: 95%;
+    min-height: 25px;
+    resize: vertical;
+    padding: .5em;
+    max-width: 50rem;
+    font-size: 2em;
+    border-radius: 10px;
+} 
+
+.rentalDates {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+     
+}
+
+.rentalDates input {
+    font-size: 1.5em;
+}
+
+#rentalDates {
+    grid-row: 2/3;
+}
+
+#submit {
+    grid-column: 1/3;
+}
