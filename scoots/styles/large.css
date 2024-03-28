@@ -1,0 +1,33 @@
+@media screen and (min-width: 1200px) {
+
+    h1 {
+        font-size: 5em;
+    }
+
+    /* header h2 {
+        grid-row: 2/3;
+        font-size: 8em;
+    } */
+
+    .navigation a {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1.5em;
+        margin: 0 auto;
+        padding: 0 1em;
+    }
+    h2 {
+        text-align: center;
+        font-size: 7em;
+    }
+
+    #map {
+        width: 100%;
+        height: 400px;
+      }
+
+      iframe {
+        width: 100%;
+      }
+}

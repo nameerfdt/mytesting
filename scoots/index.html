@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scoots Rentals Cozumel</title>
+    <meta name="description"
+        content="Welcome to Scoots. We're here for all your rental needs to tour the beautiful island of Cozumel. Rent motor scooters, ATV's and Jeeps for half day or full day.">
+    <meta name="author" content="Tracy Freeman">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- Need a favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Scoots: Cozumel Motor Scooter Rental Company">
+    <meta property="og:type" content="website">
+    <!-- Need a image for facebook -->
+    <meta property="og:image" content="Absolute URL">
+    <meta property="og:url" content="https://nameerfdt.github.io/wdd230/scoots">
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <!-- <img class="logo-img" src="images/placeholder" alt="Scoots logo" width="125" height="125"
+            onclick="document.location='.'"> -->
+
+            <h1 class="title">Scoots Rentals</h1>
+            <!-- <h2>Scoot around Cozumel: Rent, Ride, Explore!</h2> -->
+
+            <a id="hamburgermenu"></a>
+            <nav class="navigation">
+                <a href="." class="active">Home</a>
+                <a href="rentals.html">Rentals</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="explore.html">Explore</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+        </header>
+
+        <div id="banner">
+            <p>Today's Expected High:<span id="closeBanner">❌</span></p>
+        </div>
+
+        <main>
+            <h2>Scoot around Cozumel:<br> Rent, Ride, Explore!</h2>
+            <div>
+                <button id="reserveBtn" onclick="document.location='reservations.html'">Reserve Now!</button>
+            </div>
+
+            <section id="weather">
+                <div id="currentWeather">
+                    <p><span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="images/placeholder.svg" alt="weather description">
+                        <figcaption></figcaption>
+                    </figure>
+                    <p>Humidity: <span id="humidity"></span></p>
+                    <p>Windspeed: <span id="windSpeed"></span></p>
+                </div>
+
+            </section>
+
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> <br>Tracy Freeman<br> United States of America</p>
+
+            <div class="lastmodification">
+                <p>Last update: <span id="lastmodification"></span> </p>
+            </div>
+        </footer>
+        <script src="scripts/getdates.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/weather.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+References used:
+
+background image:
+https://www.pexels.com/search/Cozumel%20scooter/
+
+=========================
+
+map of el Centro de Cozumel
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d14947.5913342209!2d-86.95571065901318!3d20.510414034194085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e3!4m5!1s0x8f4e59cceda3d799%3A0xbf8ea7e97451cfd8!2sCentro%2C%20San%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!3m2!1d20.5111971!2d-86.94613609999999!4m3!3m2!1d20.5121424!2d-86.9457972!5e0!3m2!1sen!2sus!4v1711305585116!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+map near Terminal Puerta Maya
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d1816.8183555707833!2d-86.97425416502168!3d20.47654207904691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e3!4m5!1s0x8f4e57491a71c81d%3A0x6933058e58e0ee3d!2sTerminal%20Maritima%20Puerta%20Maya%2C%20San%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!3m2!1d20.4765505!2d-86.9734337!4m3!3m2!1d20.4765317!2d-86.9734598!5e0!3m2!1sen!2sus!4v1711305967761!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+google map two location embed without api
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Map Embed</title>
+<style>
+  /* Add CSS styles as needed */
+  #map {
+    width: 100%;
+    height: 400px;
+  }
+</style>
+</head>
+<body>
+
+<iframe id="map" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<script>
+// Construct the URL with the two locations
+const location1 = "New York City";
+const location2 = "Los Angeles";
+const mapUrl = `https://www.google.com/maps/embed/v1/view?q=${encodeURIComponent(location1)}&q=${encodeURIComponent(location2)}&zoom=6&maptype=roadmap`;
+
+// Set the URL as the src attribute of the iframe
+document.getElementById("map").setAttribute("src", mapUrl);
+</script>
+
+</body>
+</html>
+
+
+
+
+http://www.htlrentals.com/
+https://www.mopedrentalscozumel.com/home ** good for rentals layout
+https://www.cnmrental.com/contact ** good site all around
+
+
+Honda Metropolitan (49cc)
+https://www.hondaprokevin.com/2023-honda-metropolitan-scooter-review-specs-ncw50
+
+Honda Dio (110cc) - 2 person
+https://autos.maxabout.com/bikes/honda/dio/dio-110
+
+Honda PCX150 (149cc) 
+https://powersports.honda.com/motorcycle/scooter/pcx
+
+Honda Pioneer 1000 - 4 person
+https://powersports.honda.com/sxs/recutility/pioneer-700-4
+
+Jeep Wrangler - 4 door manuel with A/C - 5 person
+https://www.kbb.com/jeep/wrangler-unlimited/2021/
+
+Jeep Wrangler - 2 door - open air - manuel - 4 person
+https://www.edmunds.com/jeep/wrangler/2021/review/
+
+
+IMAGES:
+https://www.pexels.com/photo/silhouette-of-palm-leaves-near-body-of-water-6161224/
+
+https://www.pexels.com/photo/street-with-restaurants-in-playa-del-carmen-16891201/
+
+https://www.pexels.com/photo/people-on-the-hill-overlooking-the-city-5350999/
+
+https://pixabay.com/photos/moto-landscape-costa-beach-mexico-3875699/
+
+https://pixabay.com/photos/sunset-clouds-cozumel-pier-port-7166592/
+
+background:
+https://www.pexels.com/search/Cozumel%20scooter/
+
+
+Places to visit: 
+
+Punta Sur Eco Beach Park - Located at the southern tip of Cozumel, Punta Sur Eco Beach Park offers breathtaking views, a lighthouse, a museum, and opportunities for birdwatching and crocodile spotting.
+
+Playa Mia Grand Beach Park: This beach club offers a variety of activities, including water sports, beach volleyball, kayaking, and more. It's a great spot for families and groups.
+
+El Mirador Lookout: Enjoy panoramic views of Cozumel and the surrounding Caribbean Sea from El Mirador, a scenic overlook located along the coastal road.
+
+Shopping in San Miguel: Stroll through the streets of San Miguel, the main town on Cozumel, and explore its shops, boutiques, and markets offering local crafts, souvenirs, and jewelry.
+
+https://www.royalcaribbean.com/shore-excursions/port/czm/cozumel-mexico
+
+https://www.celebritycruises.com/shore-excursions/czm/cozumel-mexico/destination-highlight-explore-chichen-itza-ruins-with-vr/czcg
+
+https://www.celebritycruises.com/shore-excursions/czm/cozumel/destination-highlight-atv-ride-and-beach-experience/czbd
+
+https://www.celebritycruises.com/shore-excursions/czm/cozumel/destination-highlight-jeep-adventure-to-punta-sur-national-park/czax
+
+https://www.celebritycruises.com/shore-excursions/czm/cozumel/destination-highlight-cove-snorkel-cavern-exploration-and-atv/czxt
+
+Contact example:
+https://atvrentalcozumel.jimdo.com/english/contact/
+
+
+form examples:
+https://www.jotform.com/form-templates/category/reservation

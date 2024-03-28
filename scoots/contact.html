@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scoots Rentals Cozumel</title>
+    <meta name="description"
+        content="Welcome to Scoots. We're here for all your rental needs to tour the beautiful island of Cozumel. Rent motor scooters, ATV's and Jeeps for half day or full day.">
+    <meta name="author" content="Tracy Freeman">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- Need a favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Scoots: Cozumel Motor Scooter Rental Company">
+    <meta property="og:type" content="website">
+    <!-- Need a image for facebook -->
+    <meta property="og:image" content="Absolute URL">
+    <meta property="og:url" content="https://nameerfdt.github.io/wdd230/scoots">
+</head>
+
+<body>
+    <div class="content">
+        <header>
+
+            <h1 class="title">Scoots Rentals</h1>
+
+            <a id="hamburgermenu"></a>
+            <nav class="navigation">
+                <a href=".">Home</a>
+                <a href="rentals.html">Rentals</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="explore.html">Explore</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+
+        </header>
+
+        <main>
+
+            <h2>Contact Us!</h2>
+
+            <div class="form-grid">
+                <form method="get" action="thankyou.html">
+                    <fieldset>
+
+                        <label class="info" for="fname">First Name*
+                            <input type="text" id="fname" name="fname" required></label>
+
+                        <label class="info" for="lname">Last Name*
+                            <input type="text" id="lname" name="lname" required></label>
+
+                        <!-- <label class="info" for="mobile">Mobile Phone Number
+                            <input type="tel" id="mobile" name="mobile" requried></label> -->
+
+                        <label class="info" for="email">Email* <input type="email" id="email" name="email"
+                                placeholder="anyone@email.com" title="Please enter a valid email address."
+                                required></label>
+
+                        <label class="info" for="comment">Comment*
+                            <input type="text" id="comment" name="comment" required></label>
+
+                        <input type="hidden" id="timeStamp" name="timeStamp">
+
+                        <input type="submit" value="Requesting Info" class="submitBtn">
+                    </fieldset>
+
+                </form>
+            </div>
+            <div class="address-grid">
+                <address>
+                    <p>Scoots Rentals</p>
+                    <p>123 Scooter Rd</p>
+                    <p>El Centro, Cozumel</p>
+                    <p>+1 (234) 567-8901</p>
+                    <p>ScootsCentro@email.com</p>
+
+                </address>
+
+                <address>
+                    <p>Scoots Rentals</p>
+                    <p>456 Scooter Rd</p>
+                    <p>Terminal, Cozumel</p>
+                    <p>+1 (234) 567-8902</p>
+                    <p>ScootsTerminal@email.com</p>
+                </address>
+                <div id="hours">
+                    <p>Hours</p>
+                    <p>Mon - Sat 8:00 am - 6:00 pm</p>
+                    <p>Sunday By appointment Only</p>
+                </div>
+            </div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14949.230460722682!2d-86.95184950521913!3d20.493612231184983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1711503563139!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> <br>Tracy Freeman<br> United States of America</p>
+
+            <div class="lastmodification">
+                <p>Last update: <span id="lastmodification"></span> </p>
+            </div>
+        </footer>
+        <script src="scripts/getdates.js"></script>
+        <script src="scripts/hamburger.js"></script>
+    </div>
+</body>
+
+</html>

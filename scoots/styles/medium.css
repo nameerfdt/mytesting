@@ -1,0 +1,28 @@
+@media screen and (min-width: 700px) {
+    h1 {
+        font-size: 3em;
+        margin-top: .25em;
+    }
+
+    header h2 {
+        font-size: 25px;
+        margin-bottom: .5em;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        font-size: 2em;
+    }
+    
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+        padding: 0 1.25em;
+    }
+
+    #hamburgermenu {
+        display: none;
+    }
+}
