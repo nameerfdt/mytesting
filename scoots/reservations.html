@@ -63,9 +63,9 @@
                 </ul>
             </section>
 
+            <div class="res-grid">
+                <form method="get" action="thankyou.html">
 
-            <form method="get" action="thankyou.html">
-                <div class="grid">
                     <fieldset>
                         <legend>Renters Information</legend>
 
@@ -87,8 +87,7 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend>Cruise Details</legend>
-                        <p>For cruise passengers only:</p>
+                        <legend>For cruise passengers only:</legend>
                         <label class="info" for="cruiseLine">Select Cruise Line:</label>
                         <select id="cruiseLine" name="cruiseLine" onchange="toggleOtherCruiseLine(this)">
                             <option value="">Select Cruise Line</option>
@@ -125,50 +124,52 @@
                         </div>
 
                     </fieldset>
+                    <div id="rentalType">
+                        <fieldset>
+                            <legend>Rental Type
+                            </legend>
 
-                    <fieldset>
-                        <legend>Rental Type
-                        </legend>
+                            <label class="sbs"><input type="radio" name="audience" value="Gold"> Honda Metro
+                                Scooter, 1
+                                person
+                            </label>
 
-                        <label class="sbs"><input type="radio" name="audience" value="Gold"> Honda Metro
-                            Scooter, 1
-                            person
-                        </label>
+                            <label class="sbs"><input type="radio" name="audience" value="Silver"> Honda Dio
+                                Scooter, 2
+                                person
+                            </label>
 
-                        <label class="sbs"><input type="radio" name="audience" value="Silver"> Honda Dio
-                            Scooter, 2
-                            person
-                        </label>
+                            <label class="sbs"><input type="radio" name="audience" value="Bronze"> Honda PCX150
+                                Scooter, 2
+                                person
+                            </label>
 
-                        <label class="sbs"><input type="radio" name="audience" value="Bronze"> Honda PCX150
-                            Scooter, 2
-                            person
-                        </label>
+                            <label class="sbs"><input type="radio" name="audience" value="Non-Profit"> Honda Pioneer
+                                1000
+                                ATV -
+                                4 person
+                            </label>
 
-                        <label class="sbs"><input type="radio" name="audience" value="Non-Profit"> Honda Pioneer
-                            1000
-                            ATV -
-                            4 person
-                        </label>
+                            <label class="sbs"><input type="radio" name="audience" value="Non-Profit"> Jeep Wrangler
+                                - 4
+                                door
+                                manuel with A/C, 5 person
+                            </label>
 
-                        <label class="sbs"><input type="radio" name="audience" value="Non-Profit"> Jeep Wrangler
-                            - 4
-                            door
-                            manuel with A/C, 5 person
-                        </label>
-
-                        <label class="sbs"><input type="radio" name="audience" value="Non-Profit"> Jeep Wrangler
-                            - 2
-                            door,
-                            open air, manual, 4 person
-                        </label>
+                            <label class="sbs"><input type="radio" name="audience" value="Non-Profit"> Jeep Wrangler
+                                - 2
+                                door,
+                                open air, manual, 4 person
+                            </label>
+                    </div>
 
                     </fieldset>
                     <input type="hidden" id="timeStamp" name="timeStamp">
 
                     <input type="submit" value="Make Reservation!" class="submitBtn">
-                </div>
-            </form>
+
+                </form>
+            </div>
         </main>
     </div>
 
