@@ -1,4 +1,4 @@
-const pricingURL = "https://nameerfdt.github.io/mytesting/scoots/pricing.json";
+const pricingURL = "https://nameerfdt.github.io/mytesting/scoots2/pricing.json";
 
 async function getPricing() {
     try {
